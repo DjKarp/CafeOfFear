@@ -43,5 +43,11 @@ namespace CafeOfFear
                 }
             }
         }
+
+        public void CoffeCupTake(IFillinable fillinable)
+        {
+            if (fillinable == _fillinableItem)
+                _fillinableItem = null;
+        }
     }
 }

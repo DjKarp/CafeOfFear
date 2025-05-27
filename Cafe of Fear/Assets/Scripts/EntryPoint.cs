@@ -15,9 +15,9 @@ namespace CafeOfFear
             _signalBus = signalBus;
         }
 
-        private void Awake()
+        private void Start()
         {
-
+            StartGame();
         }
 
         private void StartGame()
