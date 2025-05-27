@@ -42,7 +42,7 @@ namespace CafeOfFear
 
         private void RotateVertical()
         {
-            _currentDir.y = Mathf.Lerp(_currentDir.y, _mouseDirection.y, 1f / _lookSpeed);
+            _currentDir.y = Mathf.Lerp(_currentDir.y, _mouseDirection.y, /*1f /*/ _lookSpeed);
             _mouseLook.y += _currentDir.y;
             _camTransform.localRotation = Quaternion.AngleAxis(Mathf.Clamp(-_mouseLook.y, -_rotateEdgeX, _rotateEdgeX), Vector3.right);
         }

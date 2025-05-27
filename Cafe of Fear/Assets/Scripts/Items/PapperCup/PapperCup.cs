@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 namespace CafeOfFear
 {
@@ -8,6 +9,8 @@ namespace CafeOfFear
     {
         [SerializeField] private Animator _animator;
         [SerializeField] private Transform _cupPlace;
+
+        private PlayerAndItems _playerAndItems;
 
         public enum PapperCupState
         {
@@ -20,9 +23,10 @@ namespace CafeOfFear
 
         public PapperCupState CupState { get => _cupState; set => _cupState = value; }
 
-        protected override void Awake()
+        [Inject]
+        public void Construct(PlayerAndItems playerAndItems)
         {
-            base.Awake();            
+            _playerAndItems = playerAndItems;
         }
 
         public void StartFilling()
@@ -42,6 +46,8 @@ namespace CafeOfFear
 
             if (papperCupCap != null && _cupState == PapperCupState.Fill)
             {
+                _playerAndItems.ReseaseItem();
+                papperCupCap.DeactivateCollider();
                 papperCupCap.Pick(_cupPlace);
             }
         }

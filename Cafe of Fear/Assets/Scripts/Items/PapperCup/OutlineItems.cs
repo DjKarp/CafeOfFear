@@ -44,7 +44,7 @@ namespace CafeOfFear
 
             Transform.parent = newParent;
             Transform.localPosition = Vector3.zero;
-            Transform.localRotation = Quaternion.Euler(-90.0f, 0.0f, 0.0f);
+            Transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
         }
 
         public virtual void Drop(Vector3 direction)
@@ -54,7 +54,8 @@ namespace CafeOfFear
             Rigidbody.isKinematic = false;
             MeshCollider.isTrigger = false;
 
-            Rigidbody.AddForce(direction, ForceMode.Impulse);
+            if (direction != Vector3.zero)
+                Rigidbody.AddForce(direction, ForceMode.Impulse);
         }
     }
 }
