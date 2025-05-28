@@ -1,0 +1,2230 @@
+fileFormatVersion: 2
+guid: a0fd6a0fabf67c04e905be0aab31a2d1
+timeCreated: 1491839085
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Bedro.L
+    100004: Bedro.R
+    100006: Bone
+    100008: Chelust
+    100010: Chelust_end
+    100012: Golen.L
+    100014: Golen.L_end
+    100016: Golen.R
+    100018: Golen.R_end
+    100020: Golova
+    100022: Holka
+    100024: Hvost
+    100026: Hvost.001
+    100028: Hvost.002
+    100030: Hvost.003
+    100032: Hvost.003_end
+    100034: Koleno.L
+    100036: Koleno.R
+    100038: PalecP.L
+    100040: PalecP.L_end
+    100042: PalecP.R
+    100044: PalecP.R_end
+    100046: Plane.013
+    100048: Plane.014
+    100050: Plane.022
+    100052: Plecho.L
+    100054: Plecho.R
+    100056: Poyas
+    100058: PredPlech.L
+    100060: PredPlech.L_end
+    100062: PredPlech.R
+    100064: PredPlech.R_end
+    100066: //RootNode
+    100068: RichagPered.L
+    100070: RichagPered.R
+    100072: RichagZad.L
+    100074: RichagZad.R
+    100076: Sheya
+    100078: Sheya_end
+    100080: Sobaka
+    100082: Spina
+    100084: Stopa.L
+    100086: Stopa.R
+    100088: Taz
+    100090: Yazik
+    100092: Yazik.001
+    100094: Yazik.002
+    100096: Yazik.003
+    100098: Yazik.004
+    100100: Yazik.005
+    100102: Yazik.005_end
+    100104: ZadPalec.L
+    100106: ZadPalec.L_end
+    100108: ZadPalec.R
+    100110: ZadPalec.R_end
+    100112: ZadStopa.L
+    100114: ZadStopa.R
+    400000: Armature
+    400002: Bedro.L
+    400004: Bedro.R
+    400006: Bone
+    400008: Chelust
+    400010: Chelust_end
+    400012: Golen.L
+    400014: Golen.L_end
+    400016: Golen.R
+    400018: Golen.R_end
+    400020: Golova
+    400022: Holka
+    400024: Hvost
+    400026: Hvost.001
+    400028: Hvost.002
+    400030: Hvost.003
+    400032: Hvost.003_end
+    400034: Koleno.L
+    400036: Koleno.R
+    400038: PalecP.L
+    400040: PalecP.L_end
+    400042: PalecP.R
+    400044: PalecP.R_end
+    400046: Plane.013
+    400048: Plane.014
+    400050: Plane.022
+    400052: Plecho.L
+    400054: Plecho.R
+    400056: Poyas
+    400058: PredPlech.L
+    400060: PredPlech.L_end
+    400062: PredPlech.R
+    400064: PredPlech.R_end
+    400066: //RootNode
+    400068: RichagPered.L
+    400070: RichagPered.R
+    400072: RichagZad.L
+    400074: RichagZad.R
+    400076: Sheya
+    400078: Sheya_end
+    400080: Sobaka
+    400082: Spina
+    400084: Stopa.L
+    400086: Stopa.R
+    400088: Taz
+    400090: Yazik
+    400092: Yazik.001
+    400094: Yazik.002
+    400096: Yazik.003
+    400098: Yazik.004
+    400100: Yazik.005
+    400102: Yazik.005_end
+    400104: ZadPalec.L
+    400106: ZadPalec.L_end
+    400108: ZadPalec.R
+    400110: ZadPalec.R_end
+    400112: ZadStopa.L
+    400114: ZadStopa.R
+    4300000: Sobaka
+    4300002: Plane.014
+    4300004: Plane.022
+    4300006: Plane.013
+    7400000: Armature|AttackMirror
+    7400002: Armature|Bounce
+    7400004: Armature|Cry
+    7400006: Armature|Damage
+    7400008: Armature|DamageMirror
+    7400010: Armature|Death
+    7400012: Armature|DoubleAttack
+    7400014: Armature|Expectation1
+    7400016: Armature|Expectation2
+    7400018: Armature|Expectation3
+    7400020: Armature|Feeding
+    7400022: Armature|Run
+    7400024: Armature|Steal
+    7400026: Armature|Step
+    9500000: //RootNode
+    13700000: Plane.013
+    13700002: Plane.014
+    13700004: Plane.022
+    13700006: Sobaka
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|AttackMirror
+      takeName: Armature|AttackMirror
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Golova
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust/Chelust_end
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005/Yazik.005_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L/PalecP.L_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R/PalecP.R_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L/ZadPalec.L_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R/ZadPalec.R_end
+        weight: 1
+      - path: Armature/Bone/Taz
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L/Golen.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R/Golen.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003/Hvost.003_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L/PredPlech.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R/PredPlech.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya/Sheya_end
+        weight: 1
+      - path: Plane.013
+        weight: 1
+      - path: Plane.014
+        weight: 1
+      - path: Plane.022
+        weight: 1
+      - path: Sobaka
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Bounce
+      takeName: Armature|Bounce
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Golova
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust/Chelust_end
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005/Yazik.005_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L/PalecP.L_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R/PalecP.R_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L/ZadPalec.L_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R/ZadPalec.R_end
+        weight: 1
+      - path: Armature/Bone/Taz
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L/Golen.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R/Golen.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003/Hvost.003_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L/PredPlech.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R/PredPlech.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya/Sheya_end
+        weight: 1
+      - path: Plane.013
+        weight: 1
+      - path: Plane.014
+        weight: 1
+      - path: Plane.022
+        weight: 1
+      - path: Sobaka
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Cry
+      takeName: Armature|Cry
+      firstFrame: 0
+      lastFrame: 110
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Golova
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust/Chelust_end
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005/Yazik.005_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L/PalecP.L_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R/PalecP.R_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L/ZadPalec.L_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R/ZadPalec.R_end
+        weight: 1
+      - path: Armature/Bone/Taz
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L/Golen.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R/Golen.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003/Hvost.003_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L/PredPlech.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R/PredPlech.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya/Sheya_end
+        weight: 1
+      - path: Plane.013
+        weight: 1
+      - path: Plane.014
+        weight: 1
+      - path: Plane.022
+        weight: 1
+      - path: Sobaka
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Damage
+      takeName: Armature|Damage
+      firstFrame: 0
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Golova
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust/Chelust_end
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005/Yazik.005_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L/PalecP.L_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R/PalecP.R_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L/ZadPalec.L_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R/ZadPalec.R_end
+        weight: 1
+      - path: Armature/Bone/Taz
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L/Golen.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R/Golen.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003/Hvost.003_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L/PredPlech.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R/PredPlech.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya/Sheya_end
+        weight: 1
+      - path: Plane.013
+        weight: 1
+      - path: Plane.014
+        weight: 1
+      - path: Plane.022
+        weight: 1
+      - path: Sobaka
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|DamageMirror
+      takeName: Armature|DamageMirror
+      firstFrame: 0
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Golova
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust/Chelust_end
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005/Yazik.005_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L/PalecP.L_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R/PalecP.R_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L/ZadPalec.L_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R/ZadPalec.R_end
+        weight: 1
+      - path: Armature/Bone/Taz
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L/Golen.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R/Golen.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003/Hvost.003_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L/PredPlech.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R/PredPlech.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya/Sheya_end
+        weight: 1
+      - path: Plane.013
+        weight: 1
+      - path: Plane.014
+        weight: 1
+      - path: Plane.022
+        weight: 1
+      - path: Sobaka
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Death
+      takeName: Armature|Death
+      firstFrame: 0
+      lastFrame: 28
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Golova
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust/Chelust_end
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005/Yazik.005_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L/PalecP.L_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R/PalecP.R_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L/ZadPalec.L_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R/ZadPalec.R_end
+        weight: 1
+      - path: Armature/Bone/Taz
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L/Golen.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R/Golen.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003/Hvost.003_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L/PredPlech.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R/PredPlech.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya/Sheya_end
+        weight: 1
+      - path: Plane.013
+        weight: 1
+      - path: Plane.014
+        weight: 1
+      - path: Plane.022
+        weight: 1
+      - path: Sobaka
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|DoubleAttack
+      takeName: Armature|DoubleAttack
+      firstFrame: 0
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Golova
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust/Chelust_end
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005/Yazik.005_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L/PalecP.L_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R/PalecP.R_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L/ZadPalec.L_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R/ZadPalec.R_end
+        weight: 1
+      - path: Armature/Bone/Taz
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L/Golen.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R/Golen.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003/Hvost.003_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L/PredPlech.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R/PredPlech.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya/Sheya_end
+        weight: 1
+      - path: Plane.013
+        weight: 1
+      - path: Plane.014
+        weight: 1
+      - path: Plane.022
+        weight: 1
+      - path: Sobaka
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Expectation1
+      takeName: Armature|Expectation1
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Golova
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust/Chelust_end
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005/Yazik.005_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L/PalecP.L_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R/PalecP.R_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L/ZadPalec.L_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R/ZadPalec.R_end
+        weight: 1
+      - path: Armature/Bone/Taz
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L/Golen.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R/Golen.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003/Hvost.003_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L/PredPlech.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R/PredPlech.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya/Sheya_end
+        weight: 1
+      - path: Plane.013
+        weight: 1
+      - path: Plane.014
+        weight: 1
+      - path: Plane.022
+        weight: 1
+      - path: Sobaka
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Expectation2
+      takeName: Armature|Expectation2
+      firstFrame: 0
+      lastFrame: 178
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Golova
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust/Chelust_end
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005/Yazik.005_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L/PalecP.L_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R/PalecP.R_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L/ZadPalec.L_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R/ZadPalec.R_end
+        weight: 1
+      - path: Armature/Bone/Taz
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L/Golen.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R/Golen.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003/Hvost.003_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L/PredPlech.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R/PredPlech.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya/Sheya_end
+        weight: 1
+      - path: Plane.013
+        weight: 1
+      - path: Plane.014
+        weight: 1
+      - path: Plane.022
+        weight: 1
+      - path: Sobaka
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Expectation3
+      takeName: Armature|Expectation3
+      firstFrame: 0
+      lastFrame: 230
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Golova
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust/Chelust_end
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005/Yazik.005_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L/PalecP.L_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R/PalecP.R_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L/ZadPalec.L_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R/ZadPalec.R_end
+        weight: 1
+      - path: Armature/Bone/Taz
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L/Golen.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R/Golen.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003/Hvost.003_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L/PredPlech.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R/PredPlech.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya/Sheya_end
+        weight: 1
+      - path: Plane.013
+        weight: 1
+      - path: Plane.014
+        weight: 1
+      - path: Plane.022
+        weight: 1
+      - path: Sobaka
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Feeding
+      takeName: Armature|Feeding
+      firstFrame: 0
+      lastFrame: 132
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Golova
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust/Chelust_end
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005/Yazik.005_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L/PalecP.L_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R/PalecP.R_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L/ZadPalec.L_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R/ZadPalec.R_end
+        weight: 1
+      - path: Armature/Bone/Taz
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L/Golen.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R/Golen.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003/Hvost.003_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L/PredPlech.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R/PredPlech.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya/Sheya_end
+        weight: 1
+      - path: Plane.013
+        weight: 1
+      - path: Plane.014
+        weight: 1
+      - path: Plane.022
+        weight: 1
+      - path: Sobaka
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Run
+      takeName: Armature|Run
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Golova
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust/Chelust_end
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005/Yazik.005_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L/PalecP.L_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R/PalecP.R_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L/ZadPalec.L_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R/ZadPalec.R_end
+        weight: 1
+      - path: Armature/Bone/Taz
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L/Golen.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R/Golen.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003/Hvost.003_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L/PredPlech.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R/PredPlech.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya/Sheya_end
+        weight: 1
+      - path: Plane.013
+        weight: 1
+      - path: Plane.014
+        weight: 1
+      - path: Plane.022
+        weight: 1
+      - path: Sobaka
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Steal
+      takeName: Armature|Steal
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Golova
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust/Chelust_end
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005/Yazik.005_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L/PalecP.L_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R/PalecP.R_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L/ZadPalec.L_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R/ZadPalec.R_end
+        weight: 1
+      - path: Armature/Bone/Taz
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L/Golen.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R/Golen.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003/Hvost.003_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L/PredPlech.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R/PredPlech.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya/Sheya_end
+        weight: 1
+      - path: Plane.013
+        weight: 1
+      - path: Plane.014
+        weight: 1
+      - path: Plane.022
+        weight: 1
+      - path: Sobaka
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Step
+      takeName: Armature|Step
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Golova
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust
+        weight: 1
+      - path: Armature/Bone/Golova/Chelust/Chelust_end
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005
+        weight: 1
+      - path: Armature/Bone/Golova/Yazik/Yazik.001/Yazik.002/Yazik.003/Yazik.004/Yazik.005/Yazik.005_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L
+        weight: 1
+      - path: Armature/Bone/RichagPered.L/Stopa.L/PalecP.L/PalecP.L_end
+        weight: 1
+      - path: Armature/Bone/RichagPered.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R
+        weight: 1
+      - path: Armature/Bone/RichagPered.R/Stopa.R/PalecP.R/PalecP.R_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L
+        weight: 1
+      - path: Armature/Bone/RichagZad.L/ZadStopa.L/ZadPalec.L/ZadPalec.L_end
+        weight: 1
+      - path: Armature/Bone/RichagZad.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R
+        weight: 1
+      - path: Armature/Bone/RichagZad.R/ZadStopa.R/ZadPalec.R/ZadPalec.R_end
+        weight: 1
+      - path: Armature/Bone/Taz
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.L/Koleno.L/Golen.L/Golen.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R
+        weight: 1
+      - path: Armature/Bone/Taz/Bedro.R/Koleno.R/Golen.R/Golen.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003
+        weight: 1
+      - path: Armature/Bone/Taz/Hvost/Hvost.001/Hvost.002/Hvost.003/Hvost.003_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.L/PredPlech.L/PredPlech.L_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Plecho.R/PredPlech.R/PredPlech.R_end
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya
+        weight: 1
+      - path: Armature/Bone/Taz/Poyas/Spina/Holka/Sheya/Sheya_end
+        weight: 1
+      - path: Plane.013
+        weight: 1
+      - path: Plane.014
+        weight: 1
+      - path: Plane.022
+        weight: 1
+      - path: Sobaka
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.3
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

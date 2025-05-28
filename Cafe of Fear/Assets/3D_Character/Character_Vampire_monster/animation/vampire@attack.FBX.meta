@@ -1,0 +1,221 @@
+fileFormatVersion: 2
+guid: fb8c82e3dbb423743a7bc062239dd9e5
+timeCreated: 1449832901
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Body_mesh
+    100002: Character
+    100004: Character001
+    100006: Character002
+    100008: Character002Hub002
+    100010: Character002Hub002Bone001
+    100012: Character002Hub003
+    100014: Character002Hub004
+    100016: Character002Hub004Bone002
+    100018: Character002Hub004Bone004
+    100020: Character002Hub004Bone005
+    100022: Character002LArm1
+    100024: Character002LArm21
+    100026: Character002LArm22
+    100028: Character002LArmCollarbone
+    100030: Character002LArmDigit11
+    100032: Character002LArmDigit12
+    100034: Character002LArmDigit13
+    100036: Character002LArmDigit21
+    100038: Character002LArmDigit22
+    100040: Character002LArmDigit23
+    100042: Character002LArmDigit31
+    100044: Character002LArmDigit32
+    100046: Character002LArmDigit33
+    100048: Character002LArmDigit41
+    100050: Character002LArmDigit42
+    100052: Character002LArmDigit43
+    100054: Character002LArmDigit51
+    100056: Character002LArmDigit52
+    100058: Character002LArmDigit53
+    100060: Character002LArmPalm
+    100062: Character002LLeg1
+    100064: Character002LLeg2
+    100066: Character002LLegAnkle
+    100068: Character002LLegDigit11
+    100070: Character002LLegPlatform
+    100072: Character002RArm1
+    100074: Character002RArm21
+    100076: Character002RArm22
+    100078: Character002RArmCollarbone
+    100080: Character002RArmDigit11
+    100082: Character002RArmDigit12
+    100084: Character002RArmDigit13
+    100086: Character002RArmDigit21
+    100088: Character002RArmDigit22
+    100090: Character002RArmDigit23
+    100092: Character002RArmDigit31
+    100094: Character002RArmDigit32
+    100096: Character002RArmDigit33
+    100098: Character002RArmDigit41
+    100100: Character002RArmDigit42
+    100102: Character002RArmDigit43
+    100104: Character002RArmDigit51
+    100106: Character002RArmDigit52
+    100108: Character002RArmDigit53
+    100110: Character002RArmPalm
+    100112: Character002RLeg1
+    100114: Character002RLeg2
+    100116: Character002RLegAnkle
+    100118: Character002RLegDigit11
+    100120: Character002RLegPlatform
+    100122: Character002Spine
+    100124: Character002Spine1
+    100126: Character002Spine2
+    100128: Claws_hand_mesh
+    100130: Claws_leg_mesh
+    100132: Eye_mesh
+    100134: Teeth_mesh
+    100136: //RootNode
+    400000: Body_mesh
+    400002: Character
+    400004: Character001
+    400006: Character002
+    400008: Character002Hub002
+    400010: Character002Hub002Bone001
+    400012: Character002Hub003
+    400014: Character002Hub004
+    400016: Character002Hub004Bone002
+    400018: Character002Hub004Bone004
+    400020: Character002Hub004Bone005
+    400022: Character002LArm1
+    400024: Character002LArm21
+    400026: Character002LArm22
+    400028: Character002LArmCollarbone
+    400030: Character002LArmDigit11
+    400032: Character002LArmDigit12
+    400034: Character002LArmDigit13
+    400036: Character002LArmDigit21
+    400038: Character002LArmDigit22
+    400040: Character002LArmDigit23
+    400042: Character002LArmDigit31
+    400044: Character002LArmDigit32
+    400046: Character002LArmDigit33
+    400048: Character002LArmDigit41
+    400050: Character002LArmDigit42
+    400052: Character002LArmDigit43
+    400054: Character002LArmDigit51
+    400056: Character002LArmDigit52
+    400058: Character002LArmDigit53
+    400060: Character002LArmPalm
+    400062: Character002LLeg1
+    400064: Character002LLeg2
+    400066: Character002LLegAnkle
+    400068: Character002LLegDigit11
+    400070: Character002LLegPlatform
+    400072: Character002RArm1
+    400074: Character002RArm21
+    400076: Character002RArm22
+    400078: Character002RArmCollarbone
+    400080: Character002RArmDigit11
+    400082: Character002RArmDigit12
+    400084: Character002RArmDigit13
+    400086: Character002RArmDigit21
+    400088: Character002RArmDigit22
+    400090: Character002RArmDigit23
+    400092: Character002RArmDigit31
+    400094: Character002RArmDigit32
+    400096: Character002RArmDigit33
+    400098: Character002RArmDigit41
+    400100: Character002RArmDigit42
+    400102: Character002RArmDigit43
+    400104: Character002RArmDigit51
+    400106: Character002RArmDigit52
+    400108: Character002RArmDigit53
+    400110: Character002RArmPalm
+    400112: Character002RLeg1
+    400114: Character002RLeg2
+    400116: Character002RLegAnkle
+    400118: Character002RLegDigit11
+    400120: Character002RLegPlatform
+    400122: Character002Spine
+    400124: Character002Spine1
+    400126: Character002Spine2
+    400128: Claws_hand_mesh
+    400130: Claws_leg_mesh
+    400132: Eye_mesh
+    400134: Teeth_mesh
+    400136: //RootNode
+    4300000: Eye_mesh
+    4300002: Claws_hand_mesh
+    4300004: Claws_leg_mesh
+    4300006: Teeth_mesh
+    4300008: Body_mesh
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Body_mesh
+    13700002: Claws_hand_mesh
+    13700004: Claws_leg_mesh
+    13700006: Eye_mesh
+    13700008: Teeth_mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
