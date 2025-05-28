@@ -39,6 +39,9 @@ namespace CafeOfFear
             if (_takedItem == null)
             {
                 IPickable pickable = other.GetComponent<IPickable>();
+                if (pickable == null)
+                    pickable = other.GetComponentInParent<IPickable>();
+
                 IFillinable fillinable = other.GetComponent<IFillinable>();
 
                 if (pickable != null && (fillinable == null || fillinable.CupState != PapperCup.PapperCupState.Filling))
@@ -63,6 +66,8 @@ namespace CafeOfFear
             if (_takedItem == null)
             {
                 IPickable pickable = other.GetComponent<IPickable>();
+                if (pickable == null)
+                    pickable = other.GetComponentInParent<IPickable>();
 
                 if (pickable != null)
                 {

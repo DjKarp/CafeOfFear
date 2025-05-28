@@ -10,6 +10,7 @@ namespace CafeOfFear
         protected Transform Transform;
         protected Rigidbody Rigidbody;
         protected MeshCollider MeshCollider;
+        protected Collider ColliderChild;
 
         protected virtual void Awake()
         {
@@ -19,7 +20,8 @@ namespace CafeOfFear
             Rigidbody.isKinematic = true;
 
             MeshCollider = gameObject.GetComponent<MeshCollider>();
-            MeshCollider.isTrigger = true;
+            ColliderChild = gameObject.GetComponentInChildren<Collider>();
+            ChangeCollider(true);
 
             Outline = GetComponent<Outline>();
             Outline.enabled = false;
@@ -40,7 +42,7 @@ namespace CafeOfFear
             HideOutline();
 
             Rigidbody.isKinematic = true;
-            MeshCollider.isTrigger = true;
+            ChangeCollider(true);
 
             Transform.parent = newParent;
             Transform.localPosition = Vector3.zero;
@@ -52,10 +54,19 @@ namespace CafeOfFear
             Transform.parent = null;
 
             Rigidbody.isKinematic = false;
-            MeshCollider.isTrigger = false;
+            ChangeCollider(false);
 
             if (direction != Vector3.zero)
                 Rigidbody.AddForce(direction, ForceMode.Impulse);
+        }
+
+        private void ChangeCollider(bool isActive)
+        {
+            if (MeshCollider != null)
+                MeshCollider.isTrigger = isActive;
+
+            if (ColliderChild != null)
+                ColliderChild.isTrigger = isActive;
         }
     }
 }

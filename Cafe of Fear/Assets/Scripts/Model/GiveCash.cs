@@ -16,7 +16,7 @@ namespace CafeOfFear
 
         private Vector3 _startScale;
 
-        private float _duration = 4.0f;
+        private float _duration = 2.0f;
 
         private Sequence _tweenSequence;
 
@@ -39,8 +39,8 @@ namespace CafeOfFear
             _tweenSequence
                 .Append(transform.DOMoveY(_endPosition.y, _duration))
                 .Insert(0, _backgroundTransform.DOScale(_startScale, _duration).From(Vector3.zero))
-                .AppendInterval(_duration / 3.0f)
-                .Append(_backgroundTransform.DOScale(Vector3.zero, _duration / 3.0f))
+                .AppendInterval(1.0f)
+                .Append(_backgroundTransform.DOScale(Vector3.zero, 1.0f))
                 .OnComplete(() => Hide());
         }
 
