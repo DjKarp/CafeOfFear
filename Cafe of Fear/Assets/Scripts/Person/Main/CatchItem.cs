@@ -7,7 +7,9 @@ namespace CafeOfFear
     public class CatchItem : MonoBehaviour
     {
         [SerializeField] private GiveCash _giveCash;
-        [SerializeField] private TextNPC _textNPC;
+        [SerializeField] private TextPerson _textNPC;
+        [SerializeField] private AnimationServiceMainNPC _animationService;
+
 
         private void OnCollisionEnter(Collision collision)
         {
@@ -20,10 +22,12 @@ namespace CafeOfFear
                 if (papperCup != null && papperCup.CupState == PapperCup.PapperCupState.Fill)
                 {
                     _giveCash.Show();
+                    _animationService.Happy();
                 }
                 else
                 {
                     _textNPC.ShowText("That's not what I asked for!");
+                    _animationService.Angry();
                 }
             }
         }

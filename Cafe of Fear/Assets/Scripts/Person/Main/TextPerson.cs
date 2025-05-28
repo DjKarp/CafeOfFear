@@ -6,7 +6,7 @@ using DG.Tweening;
 
 namespace CafeOfFear
 {
-    public class TextNPC : MonoBehaviour
+    public class TextPerson : MonoBehaviour
     {
         private TextMeshPro _textMesh;
         private Sequence _tweenSequence;

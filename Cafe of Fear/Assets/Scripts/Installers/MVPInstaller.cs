@@ -10,7 +10,7 @@ namespace CafeOfFear
         [SerializeField] private PlayerAndItems _playerAndItems;
         [SerializeField] private Player _player;
 
-        [SerializeField] private NPC_Main _NPC_Main;
+        [SerializeField] private MainPerson _NPC_Main;
 
         public override void InstallBindings()
         {
@@ -43,7 +43,7 @@ namespace CafeOfFear
         private void BindNPC()
         {
             Container
-                .Bind<NPC_Main>()
+                .Bind<MainPerson>()
                 .FromInstance(_NPC_Main)
                 .AsSingle();
         }
