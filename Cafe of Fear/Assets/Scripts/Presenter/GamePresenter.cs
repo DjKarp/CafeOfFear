@@ -18,7 +18,7 @@ namespace CafeOfFear
 
         public void Init()
         {
-
+            _NPC_Main.gameObject.SetActive(true);
         }
     }
 }

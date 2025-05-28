@@ -459,10 +459,6 @@
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="System.Reactive">
-      <HintPath>Assets\3D_Environment\ThunderWire Studio\UHFPS\Plugins\Rx.NET\System.Reactive.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil">
       <HintPath>Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.dll</HintPath>
       <Private>False</Private>
