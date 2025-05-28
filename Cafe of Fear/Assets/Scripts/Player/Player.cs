@@ -6,11 +6,17 @@ namespace CafeOfFear
 {
     public class Player : MonoBehaviour
     {
+        private Transform _transform;
+
         private PlayerMovement _playerMovement;
-        private PlayerLook _playerLook;
+        [SerializeField] private PlayerLook _playerLook;
+
+        public Vector3 Position { get => transform.position; }
+        public Vector3 PlayerLook { get => _playerLook.PlayerLookDirection; }
 
         private void Awake()
         {
+            _transform = gameObject.transform;
             _playerMovement = GetComponent<PlayerMovement>();
             _playerLook = GetComponent<PlayerLook>();
         }
@@ -20,5 +26,11 @@ namespace CafeOfFear
             _playerLook.Look();
             _playerMovement.Move();
         }
+        /*
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawRay(Position, PlayerLook * 2.0f);
+        }*/
     }
 }

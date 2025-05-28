@@ -7,12 +7,17 @@ namespace CafeOfFear
     public class PlayerLook : MonoBehaviour
     {
         [SerializeField] private Transform _camTransform;
-        private float _rotateEdgeX = 45.0f;
-        private float _lookSpeed = 4.0f;
+        private float _rotateEdgeX = 60.0f;
+        private float _lookSpeedX = 4.0f;
+        private float _lookSpeedY = 2.0f;
 
         private Vector2 _mouseDirection;
         private Vector2 _mouseLook;
         private Vector2 _currentDir;
+
+        private float _rotationY;
+
+        public Vector3 PlayerLookDirection { get => _camTransform.forward; }
 
         private void Awake()
         {
@@ -24,27 +29,34 @@ namespace CafeOfFear
         {
             _mouseDirection = Vector2.Scale(
                 new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y")), 
-                new Vector2(_lookSpeed, _lookSpeed));
+                new Vector2(_lookSpeedX, _lookSpeedY));
+
+            //_mouseDirection = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
 
             if (_mouseDirection.x != 0.0f)
                 RotateHorizontal();
 
-            if ( _mouseDirection.y != 0.0f)
+            if (_mouseDirection.y != 0.0f)
                 RotateVertical();
         }
 
         private void RotateHorizontal()
         {
-            _currentDir.x = Mathf.Lerp(_currentDir.x, _mouseDirection.x, 1f / _lookSpeed);
+            _currentDir.x = Mathf.Lerp(_currentDir.x, _mouseDirection.x, 1f / _lookSpeedX);
             _mouseLook.x += _currentDir.x;
             transform.localRotation = Quaternion.AngleAxis(_mouseLook.x, transform.up);
         }
 
         private void RotateVertical()
         {
-            _currentDir.y = Mathf.Lerp(_currentDir.y, _mouseDirection.y, /*1f /*/ _lookSpeed);
+            _rotationY += Input.GetAxisRaw("Mouse Y") * _lookSpeedY;
+            _rotationY = Mathf.Clamp(_rotationY, -_rotateEdgeX, _rotateEdgeX);
+            _camTransform.localEulerAngles = new Vector3(-_rotationY, transform.localEulerAngles.y, 0);
+
+            /*
+            _currentDir.y = Mathf.Lerp(_currentDir.y, _mouseDirection.y, 1f / _lookSpeed);
             _mouseLook.y += _currentDir.y;
-            _camTransform.localRotation = Quaternion.AngleAxis(Mathf.Clamp(-_mouseLook.y, -_rotateEdgeX, _rotateEdgeX), Vector3.right);
+            _camTransform.localRotation = Quaternion.AngleAxis(Mathf.Clamp(-_mouseLook.y, -_rotateEdgeX, _rotateEdgeX), Vector3.right);*/
         }
     }
 }

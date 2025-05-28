@@ -17,21 +17,21 @@ namespace CafeOfFear
         private void Awake()
         {
             _transform = gameObject.transform;
-            _rigidbody = GetComponent<Rigidbody>();
+            //_rigidbody = GetComponent<Rigidbody>();
         }
         
         public void Move()
         {
             if (_inputHandler.Direction.x != 0.0f || _inputHandler.Direction.z != 0.0f)
             {
-                //transform.Translate(_inputHandler.Direction * Time.deltaTime);
-
+                transform.Translate(_inputHandler.Direction * Time.deltaTime);
+                /*
                 Vector2 velocity = (
                 new Vector2(_inputHandler.Direction.x * _transform.right.x, _inputHandler.Direction.x * _transform.right.z)
                 + new Vector2(_inputHandler.Direction.z * _transform.forward.x, _inputHandler.Direction.z * _transform.forward.z))
                 .normalized * _moveSpeed * Time.deltaTime;
 
-                _rigidbody.velocity = new Vector3(velocity.x, _rigidbody.velocity.y, velocity.y);
+                _rigidbody.velocity = new Vector3(velocity.x, _rigidbody.velocity.y, velocity.y);*/
             }
         }
     }

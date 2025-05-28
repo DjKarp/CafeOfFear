@@ -18,20 +18,7 @@ namespace CafeOfFear
 
         public void Init()
         {
-            _NPC_Main.gameObject.SetActive(false);
 
-            StartCoroutine(StartEventWhitWait(5.0f, () =>
-            {
-                _NPC_Main.gameObject.SetActive(true);
-                _NPC_Main.StartWalkToPlayer();                
-            }));
-        }
-
-        private IEnumerator StartEventWhitWait(float waitTime, Action callback)
-        {
-            yield return new WaitForSeconds(waitTime);
-
-            callback?.Invoke();
         }
     }
 }

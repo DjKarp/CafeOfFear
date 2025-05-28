@@ -8,6 +8,8 @@ namespace CafeOfFear
         [SerializeField] private GamePresenter _gamePresenter;
 
         [SerializeField] private PlayerAndItems _playerAndItems;
+        [SerializeField] private Player _player;
+
         [SerializeField] private NPC_Main _NPC_Main;
 
         public override void InstallBindings()
@@ -27,6 +29,11 @@ namespace CafeOfFear
 
         private void BindPlayer()
         {
+            Container
+                .Bind<Player>()
+                .FromInstance(_player)
+                .AsSingle();
+
             Container
                 .Bind<PlayerAndItems>()
                 .FromInstance(_playerAndItems)
