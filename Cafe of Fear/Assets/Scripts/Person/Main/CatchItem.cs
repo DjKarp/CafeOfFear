@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 namespace CafeOfFear
 {
@@ -9,6 +10,13 @@ namespace CafeOfFear
         [SerializeField] private GiveCash _giveCash;
         [SerializeField] private TextPerson _textNPC;
         [SerializeField] private AnimationServiceMainNPC _animationService;
+        private MainPerson _mainPerson;
+
+        [Inject]
+        public void Construct(MainPerson mainPerson)
+        {
+            _mainPerson = mainPerson;
+        }
 
 
         private void OnCollisionEnter(Collision collision)
@@ -22,13 +30,15 @@ namespace CafeOfFear
                 if (papperCup != null && papperCup.CupState == PapperCup.PapperCupState.Fill)
                 {
                     _giveCash.Show();
-                    _animationService.Happy();
+                    _mainPerson.WalkBackNow(true);
                 }
                 else
                 {
-                    _textNPC.ShowText("That's not what I asked for!");
+                    _textNPC.ShowBadtext();
                     _animationService.Angry();
                 }
+
+                collision.gameObject.SetActive(false);
             }
         }
     }

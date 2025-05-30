@@ -39,6 +39,11 @@ namespace CafeOfFear
             StartCoroutine(ResetValue());
         }
 
+        public void WalkBack()
+        {
+            _animator.SetFloat(_walkParams, _backWaltAnim);
+        }
+
         public void Happy()
         {
             _animator.SetBool(_happyParams, true);
