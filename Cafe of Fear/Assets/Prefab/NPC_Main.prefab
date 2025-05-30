@@ -528,7 +528,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 9.353467, y: 0.7163534, z: 9.374441, w: 3.503326}
+  m_margin: {x: 9.575908, y: 0.9932656, z: 9.625302, w: 3.5615869}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -691,7 +691,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2796853425272753487}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.5872085, z: -0, w: 0.8094358}
+  m_LocalRotation: {x: 0, y: 0.5872062, z: 0, w: 0.80943745}
   m_LocalPosition: {x: -3.2289245, y: 0.324, z: -1.0846682}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1556,6 +1556,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a44af0b1eb97d429bba58b55e2fbd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _badAnsvert:
+  - "This isn\u2019t what I ordered."
+  - "Um... I think you made a mistake, this isn\u2019t my order."
+  - "Sorry, but I definitely didn\u2019t ask for this."
+  - "Seriously? This isn\u2019t even coffee!"
+  - Are you not listening? I ordered something else!
+  - Wrong again? Are you kidding me?
+  - "I\u2019m tired of repeating myself: this isn\u2019t it!"
+  - Do you even check the orders or what?!
+  - This is just too much! I want my coffee now!
+  - "If you mess up again, I\u2019m leaving and not coming back! Are you messing
+    with me?!"
 --- !u!1 &7653368388512032126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,8 +1595,8 @@ Transform:
   m_GameObject: {fileID: 7653368388512032126}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.036, y: 1, z: 0.05}
+  m_LocalPosition: {x: 0, y: -0.0924, z: 0}
+  m_LocalScale: {x: 0.017514395, y: 1, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7318247107857600891}
@@ -1728,7 +1740,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8496082671852952809}
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: 0.74420214}
+  m_LocalPosition: {x: 0, y: 0, z: -0.009}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1736,8 +1748,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.4551915e-10, y: 0.0018107892}
-  m_SizeDelta: {x: 20, y: 5}
+  m_AnchoredPosition: {x: 0.213, y: 0.0018}
+  m_SizeDelta: {x: 9.826, y: 9.8588}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &4507073347869497016
 MeshRenderer:
@@ -1828,7 +1840,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.55
+  m_fontSize: 29.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1864,7 +1876,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 4.393043, y: -2.2732542, z: 5.6782856, w: -2.3485074}
+  m_margin: {x: 0.6950638, y: -0.35523558, z: 0.80304575, w: 0.13493967}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0

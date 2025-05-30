@@ -5,10 +5,9 @@ namespace CafeOfFear
 {
     public class PlayerLook : MonoBehaviour
     {
-        [SerializeField] private Transform _camTransform;
         [SerializeField] private Camera _camera;
 
-        public Vector3 PlayerLookDirection { get => _camTransform.forward; }
+        public Vector3 PlayerLookDirection { get => transform.forward; }
 
         [Header("Smoothing")]
         private float _smoothTime = 5f;
@@ -20,7 +19,7 @@ namespace CafeOfFear
 
         [Header("Look Limits")]
         private MinMax _horizontalLimits = new(-360, 360);
-        private MinMax _verticalLimits = new(-80, 90);
+        private MinMax _verticalLimits = new(-60, 60);
 
         [Header("Debug"), ReadOnly]
         private Vector2 _tempRotation;
@@ -71,7 +70,7 @@ namespace CafeOfFear
             RotationY = Quaternion.AngleAxis(_tempRotation.y, Vector3.left);
             RotationFinal = RotationX * RotationY;
 
-            _camTransform.rotation = Quaternion.Slerp(_camTransform.rotation, RotationFinal, _smoothTime * _smoothMultiplier * Time.deltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, RotationFinal, _smoothTime * _smoothMultiplier * Time.deltaTime);
         }
     }
 }

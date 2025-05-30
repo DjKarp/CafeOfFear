@@ -50,6 +50,11 @@ namespace CafeOfFear
             StartCoroutine(ResetValue());
         }
 
+        public void StopAnimation()
+        {
+            _animator.speed = 0;
+        }
+
         public IEnumerator ResetValue()
         {
             yield return new WaitForSeconds(2.0f);

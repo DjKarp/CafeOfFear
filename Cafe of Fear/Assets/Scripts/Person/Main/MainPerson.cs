@@ -20,7 +20,6 @@ namespace CafeOfFear
         private GamePresenter _gamePresenter;
 
         private float _startDelay = 5.0f;
-        private Vector3 _startPosition;
 
         public enum StateMainNPC
         {
@@ -31,7 +30,7 @@ namespace CafeOfFear
             WalkBack
         }
 
-        private StateMainNPC _npcState = StateMainNPC.None;
+        public StateMainNPC NpcState = StateMainNPC.None;
 
         [Inject]
         public void Construct(Player player, PointMainNPC pointMainNPC, GamePresenter gamePresenter)
@@ -44,7 +43,6 @@ namespace CafeOfFear
         private void Awake()
         {
             _transform = gameObject.transform;
-            _startPosition = _transform.position;
             _animationService = GetComponent<AnimationServiceMainNPC>();
             _textNPC = GetComponentInChildren<TextPerson>();
             _skinnedMesh = GetComponentInChildren<SkinnedMeshRenderer>();
@@ -61,14 +59,14 @@ namespace CafeOfFear
 
         private void Appeared()
         {
-            if (_npcState == StateMainNPC.None && _startDelay <= 0.0f)
+            if (NpcState == StateMainNPC.None && _startDelay <= 0.0f)
             {
                 if (IsPlayerLookOnNPC())
                 {
-                    _gamePresenter.StartLightFear();
-                    _npcState = StateMainNPC.WalkToPlayer;
-                    _skinnedMesh.enabled = true;
-                    _animationService.StartWalkToPlayer();
+                    
+                    NpcState = StateMainNPC.WalkToPlayer;
+                    _skinnedMesh.enabled = true;                    
+                    StartCoroutine(DelayBeforeCinematic());
                 }
             }
             else
@@ -77,15 +75,24 @@ namespace CafeOfFear
             }
         }
 
+        private IEnumerator DelayBeforeCinematic()
+        {
+            yield return new WaitForSeconds(2.0f);
+
+            _animationService.StartWalkToPlayer();
+            _gamePresenter.StartLightFear();
+        }
+
         private void WalkToPlayer()
         {
-            if (_npcState == StateMainNPC.WalkToPlayer)
+            if (NpcState == StateMainNPC.WalkToPlayer)
             {
                 float distance = Vector3.Distance(_transform.position, _pointMainNPC.Position);
                 
                 if (distance < 0.5f)
                 {
-                    _npcState = StateMainNPC.Idle;
+                    _gamePresenter.ActivatePlayer();
+                    NpcState = StateMainNPC.Idle;
                     _animationService.StopWalk();
                     _textNPC.ShowText();
                 }
@@ -94,7 +101,7 @@ namespace CafeOfFear
 
         private void Idle()
         {
-            if (_npcState == StateMainNPC.Idle)
+            if (NpcState == StateMainNPC.Idle)
             {
                 if (IsPlayerLookOnNPC())
                 {
@@ -105,13 +112,13 @@ namespace CafeOfFear
 
         private void WalkBack()
         {
-            if (_npcState == StateMainNPC.WalkBack)
+            if (NpcState == StateMainNPC.WalkBack)
             {
-                float distance = Vector3.Distance(_transform.position, _startPosition);
-                Debug.LogError(distance);
-                if (distance < 0.9f)
+                float distance = Vector3.Distance(_transform.position, _pointMainNPC.Position);
+                if (distance > 7.4f)
                 {
-                    _npcState = StateMainNPC.None;
+                    _animationService.StopAnimation();
+                    NpcState = StateMainNPC.None;
                     _gamePresenter.StartFinalFear();
                 }
             }
@@ -119,7 +126,8 @@ namespace CafeOfFear
 
         public void WalkBackNow(bool isHappy)
         {
-            _npcState = StateMainNPC.WalkBack;
+            NpcState = StateMainNPC.WalkBack;
+            _gamePresenter.DeactivatePlayer();
 
             if (isHappy)
                 _animationService.Happy();
