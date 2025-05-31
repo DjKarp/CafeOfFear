@@ -11,11 +11,13 @@ namespace CafeOfFear
         [SerializeField] private TextPerson _textNPC;
         [SerializeField] private AnimationServiceMainNPC _animationService;
         private MainPerson _mainPerson;
+        private AudioService _audioService;
 
         [Inject]
-        public void Construct(MainPerson mainPerson)
+        public void Construct(MainPerson mainPerson, AudioService audioService)
         {
             _mainPerson = mainPerson;
+            _audioService = audioService;
         }
 
 
@@ -29,11 +31,14 @@ namespace CafeOfFear
 
                 if (papperCup != null && papperCup.CupState == PapperCup.PapperCupState.Fill)
                 {
+                    _audioService.PlayPersonSound(AudioService.PersonSound.Take_Coffee);
+                    _audioService.PlayItemSound(AudioService.ItemSound.Cash);
                     _giveCash.Show();
                     _mainPerson.WalkBackNow(true);
                 }
                 else
                 {
+                    _audioService.PlayPersonSound(AudioService.PersonSound.Bad_Item);
                     _textNPC.ShowBadtext();
                     _animationService.Angry();
                 }

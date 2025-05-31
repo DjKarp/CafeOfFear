@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using DG.Tweening;
+using Zenject;
 
 namespace CafeOfFear
 {
@@ -16,9 +17,17 @@ namespace CafeOfFear
 
         private Vector3 _startScale;
 
-        private float _duration = 2.0f;
+        private float _duration = 1.0f;
 
         private Sequence _tweenSequence;
+
+        private AudioService _audioService;
+
+        [Inject]
+        public void Construct(AudioService audioService)
+        {
+            _audioService = audioService;
+        }
 
         private void Awake()
         {
@@ -39,7 +48,7 @@ namespace CafeOfFear
             _tweenSequence
                 .Append(transform.DOMoveY(_endPosition.y, _duration))
                 .Insert(0, _backgroundTransform.DOScale(_startScale, _duration).From(Vector3.zero))
-                .AppendInterval(1.0f)
+                .AppendCallback(() => _audioService.PlayItemSound(AudioService.ItemSound.Cash, gameObject))
                 .Append(_backgroundTransform.DOScale(Vector3.zero, 1.0f))
                 .OnComplete(() => Hide());
         }

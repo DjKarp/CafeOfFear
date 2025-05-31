@@ -13,14 +13,19 @@ namespace CafeOfFear
         [SerializeField] private Transform _vampireTransform;
         [SerializeField] private GameObject _light;
         [SerializeField] private GameObject _cinemaCamera;
-        [SerializeField] private GameObject _player;
 
+        private GameObject _player;                
         private MainPerson _mainPerson;
+        private AudioService _audioService;
+        private UIService _serviceUI;
 
         [Inject]
-        public void Counstruct(MainPerson mainPerson)
+        public void Counstruct(MainPerson mainPerson, AudioService audioService, UIService uIService, Player player)
         {
             _mainPerson = mainPerson;
+            _audioService = audioService;
+            _serviceUI = uIService;
+            _player = player.gameObject;
         }
 
         public void Init()
@@ -43,12 +48,15 @@ namespace CafeOfFear
 
         public void ActivatePlayer()
         {
+            _audioService.ChangeCamera(true);
             _cinemaCamera.SetActive(false);
             _player.SetActive(true);
         }
 
         public void DeactivatePlayer()
         {
+            _audioService.ChangeCamera(false);
+            _audioService.SetPlayerStepsParam(0.0f);
             _cinemaCamera.SetActive(true);
             _player.SetActive(false);
         }
@@ -60,10 +68,12 @@ namespace CafeOfFear
 
         private IEnumerator FinalFearEffect(Action callback = null)
         {
-            for (int i = 1; i < 11; i++)
+            _audioService.PlayItemSound(AudioService.ItemSound.SoundLight);
+
+            for (int i = 1; i < 17; i++)
             {
                 _light.SetActive(i%2 == 0);
-                yield return new WaitForSeconds(0.08f);
+                yield return new WaitForSeconds(0.2f);
             }
 
             callback?.Invoke();
@@ -71,6 +81,8 @@ namespace CafeOfFear
 
         private void ShowFinalFear()
         {
+            _audioService.PlayFinalFearSound(AudioService.FinalFearSound.ChangePerson);
+            _audioService.PlayFinalFearSound(AudioService.FinalFearSound.FinalFear);
             _mainPerson.gameObject.SetActive(false);
             _vampireTransform.position = _mainPerson.transform.position;
             _finalFear.SetActive(true);

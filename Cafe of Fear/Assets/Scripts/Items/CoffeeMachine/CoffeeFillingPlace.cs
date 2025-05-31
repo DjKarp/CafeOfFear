@@ -8,20 +8,16 @@ namespace CafeOfFear
     public class CoffeeFillingPlace : MonoBehaviour
     {
         private PlayerAndItems _playerAndItems;
+        private AudioService _audioService;
 
-        private Transform _transform;
         private IFillinable _fillinableItem;
         private IPickable _pickableItem;
 
         [Inject]
-        public void Construct(PlayerAndItems playerAndItems)
+        public void Construct(PlayerAndItems playerAndItems, AudioService audioService)
         {
             _playerAndItems = playerAndItems;
-        }
-
-        private void Awake()
-        {
-            _transform = gameObject.transform;
+            _audioService = audioService;
         }
 
         private void OnTriggerEnter(Collider other)
@@ -33,10 +29,12 @@ namespace CafeOfFear
 
                 if (fillinable != null && fillinable.CupState == PapperCup.PapperCupState.None)
                 {
+                    _audioService.PlayItemSound(AudioService.ItemSound.Install_Cup);
+
                     _playerAndItems.ReseaseItem();
 
                     _pickableItem = pickable;
-                    _pickableItem.Pick(_transform);
+                    _pickableItem.Pick(gameObject.transform);
 
                     _fillinableItem = fillinable;
                     _fillinableItem.StartFilling();

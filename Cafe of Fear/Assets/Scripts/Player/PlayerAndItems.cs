@@ -15,10 +15,13 @@ namespace CafeOfFear
         private IPickable _takedItem;
         private IFillinable _fillinableItems;
 
+        private AudioService _audioService;
+
         [Inject]
-        public void Construct(CoffeeFillingPlace coffeeFillingPlace)
+        public void Construct(CoffeeFillingPlace coffeeFillingPlace, AudioService audioService)
         {
             _coffeeFillingPlace = coffeeFillingPlace;
+            _audioService = audioService;
         }
 
         private void Update()
@@ -94,18 +97,24 @@ namespace CafeOfFear
 
             if (_fillinableItems != null && _fillinableItems.CupState == PapperCup.PapperCupState.Fill)
                 _coffeeFillingPlace.CoffeCupTake(_fillinableItems);
+
+            _audioService.PlayItemSound(AudioService.ItemSound.PickUp, gameObject);
         }
 
         public void DropItem()
         {
             _takedItem.Drop(transform.forward * 4.0f);
             _takedItem = null;
+
+            _audioService.PlayItemSound(AudioService.ItemSound.ThrowingObject, gameObject);
         }
 
         public void ReseaseItem()
         {
             _takedItem.Drop(Vector3.zero);
             _takedItem = null;
+
+            _audioService.PlayItemSound(AudioService.ItemSound.ThrowingObject, gameObject);
         }
         /*
         private void OnDrawGizmos()

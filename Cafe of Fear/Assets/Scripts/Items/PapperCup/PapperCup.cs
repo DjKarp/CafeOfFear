@@ -31,12 +31,14 @@ namespace CafeOfFear
 
         public void StartFilling()
         {
+            AudioService.PlayItemSound(AudioService.ItemSound.Coffeemachine, gameObject);
             _animator.SetTrigger("isFillingNow");
             _cupState = PapperCupState.Filling;
         }
 
         public void FinishFilling()
         {
+            AudioService.PlayItemSound(AudioService.ItemSound.Finish_Filled, gameObject);
             _cupState = PapperCupState.Fill;
         }
 
@@ -46,6 +48,7 @@ namespace CafeOfFear
 
             if (papperCupCap != null && _cupState == PapperCupState.Fill)
             {
+                AudioService.PlayItemSound(AudioService.ItemSound.Install_CupCap, gameObject);
                 _playerAndItems.ReseaseItem();
                 papperCupCap.DeactivateCollider();
                 papperCupCap.Pick(_cupPlace);

@@ -18,8 +18,9 @@ namespace CafeOfFear
         private PointMainNPC _pointMainNPC;
 
         private GamePresenter _gamePresenter;
+        private AudioService _audioService;
 
-        private float _startDelay = 5.0f;
+        private float _startDelay = 10.0f;
 
         public enum StateMainNPC
         {
@@ -33,11 +34,12 @@ namespace CafeOfFear
         public StateMainNPC NpcState = StateMainNPC.None;
 
         [Inject]
-        public void Construct(Player player, PointMainNPC pointMainNPC, GamePresenter gamePresenter)
+        public void Construct(Player player, PointMainNPC pointMainNPC, GamePresenter gamePresenter, AudioService audioService)
         {
             _player = player;
             _pointMainNPC = pointMainNPC;
             _gamePresenter = gamePresenter;
+            _audioService = audioService;
         }
 
         private void Awake()
@@ -61,11 +63,11 @@ namespace CafeOfFear
         {
             if (NpcState == StateMainNPC.None && _startDelay <= 0.0f)
             {
+                _skinnedMesh.enabled = true;
+
                 if (IsPlayerLookOnNPC())
-                {
-                    
-                    NpcState = StateMainNPC.WalkToPlayer;
-                    _skinnedMesh.enabled = true;                    
+                {                    
+                    NpcState = StateMainNPC.WalkToPlayer;                                       
                     StartCoroutine(DelayBeforeCinematic());
                 }
             }
@@ -77,20 +79,29 @@ namespace CafeOfFear
 
         private IEnumerator DelayBeforeCinematic()
         {
-            yield return new WaitForSeconds(2.0f);
-
-            _animationService.StartWalkToPlayer();
+            _audioService.PlayPersonSound(AudioService.PersonSound.Appearance);
             _gamePresenter.StartLightFear();
+
+            yield return new WaitForSeconds(3.0f);
+
+            _animationService.StartWalkToPlayer();            
+            _gamePresenter.StartLightFear();
+
+            yield return new WaitForSeconds(8.0f);
+
+            _audioService.StartPersonWalkToPlayer(transform);
         }
 
         private void WalkToPlayer()
         {
             if (NpcState == StateMainNPC.WalkToPlayer)
             {
+                PlayerFear();
                 float distance = Vector3.Distance(_transform.position, _pointMainNPC.Position);
                 
                 if (distance < 0.5f)
                 {
+                    _audioService.StopPersonWalkToPlayer();
                     _gamePresenter.ActivatePlayer();
                     NpcState = StateMainNPC.Idle;
                     _animationService.StopWalk();
@@ -103,6 +114,8 @@ namespace CafeOfFear
         {
             if (NpcState == StateMainNPC.Idle)
             {
+                PlayerFear();
+
                 if (IsPlayerLookOnNPC())
                 {
                     //“€нем голову к игроку;
@@ -110,12 +123,16 @@ namespace CafeOfFear
             }
         }
 
+        private float _walkBackDistance = 7.4f;
         private void WalkBack()
         {
             if (NpcState == StateMainNPC.WalkBack)
             {
                 float distance = Vector3.Distance(_transform.position, _pointMainNPC.Position);
-                if (distance > 7.4f)
+
+                _audioService.SetPlayerHeartParam(_walkBackDistance / distance);
+
+                if (distance > _walkBackDistance)
                 {
                     _animationService.StopAnimation();
                     NpcState = StateMainNPC.None;
@@ -128,6 +145,7 @@ namespace CafeOfFear
         {
             NpcState = StateMainNPC.WalkBack;
             _gamePresenter.DeactivatePlayer();
+            _audioService.PlayPersonSound(AudioService.PersonSound.WalkBack);
 
             if (isHappy)
                 _animationService.Happy();
@@ -140,6 +158,13 @@ namespace CafeOfFear
             float angle = Vector3.Angle(_player.PlayerLook, _transform.position - _player.Position);
             
             return angle < 20;
+        }
+
+        private void PlayerFear()
+        {
+            float angle = Vector3.Angle(_player.PlayerLook, _transform.position - _player.Position);
+
+            _audioService.SetPlayerHeartParam(angle / 180);
         }
     }
 }
