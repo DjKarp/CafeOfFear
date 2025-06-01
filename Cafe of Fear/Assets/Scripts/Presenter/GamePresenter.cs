@@ -17,7 +17,7 @@ namespace CafeOfFear
         private AudioService _audioService;
         private FadeService _fadeService;
 
-        private float _timeWaitBeforeAppearPerson = 5.0f;
+        private float _timeWaitBeforeAppearPerson = 15.0f;
 
         [Inject]
         public void Counstruct(MainPerson mainPerson, AudioService audioService, FadeService fadeService, Player player)

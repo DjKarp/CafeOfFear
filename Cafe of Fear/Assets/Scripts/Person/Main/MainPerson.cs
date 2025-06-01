@@ -13,6 +13,7 @@ namespace CafeOfFear
 
         private AnimationServiceMainNPC _animationService;
         private TextPerson _textNPC;
+        private PullingHead _pullingHead;
 
         private Player _player;
         private PointMainNPC _pointMainNPC;
@@ -21,8 +22,7 @@ namespace CafeOfFear
         private AudioService _audioService;
         private SignalBus _signalBus;
 
-        // !!!!!!!!!!!!
-        private float _startDelay = 1.0f;
+        private float _startDelay = 10.0f;
         private float _walkBackDistance = 7.4f;
 
         public enum StateMainNPC
@@ -53,6 +53,7 @@ namespace CafeOfFear
             _textNPC = GetComponentInChildren<TextPerson>();
             _skinnedMesh = GetComponentInChildren<SkinnedMeshRenderer>();
             _skinnedMesh.enabled = false;
+            _pullingHead = GetComponent<PullingHead>();
 
             _signalBus.Subscribe<GiveCashSignal>(AddedCash);
         }
@@ -72,7 +73,7 @@ namespace CafeOfFear
                 if (_skinnedMesh.enabled == false)
                 {
                     _skinnedMesh.enabled = true;
-                    _startDelay = 1.0f;// !!!!!!!!!!!!
+                    _startDelay = 2.0f;
                 }
                 else
                 {
@@ -127,10 +128,14 @@ namespace CafeOfFear
             if (NpcState == StateMainNPC.Idle)
             {
                 PlayerFear();
-
-                if (IsPlayerLookOnNPC())
+                
+                if (IsPlayerLookOnNPC(true))
                 {
-                    //“€нем голову к игроку;
+                    _pullingHead.DeactivatePulling();
+                }
+                else
+                {
+                    _pullingHead.ActivatePulling();
                 }
             }
         }
@@ -169,11 +174,11 @@ namespace CafeOfFear
             WalkBackNow(true);
         }
 
-        private bool IsPlayerLookOnNPC()
+        private bool IsPlayerLookOnNPC(bool isPulling = false)
         {
             float angle = Vector3.Angle(_player.PlayerLook, _transform.position - _player.Position);
             
-            return angle < 20;
+            return angle < (isPulling ? 45 : 20);
         }
 
         private void PlayerFear()

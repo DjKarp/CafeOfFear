@@ -21,13 +21,15 @@ namespace CafeOfFear
         private float _duration = 1.0f;        
 
         private AudioService _audioService;
+        private Player _player;
         private SignalBus _signalBus;
 
         [Inject]
-        public void Construct(AudioService audioService, SignalBus signalBus)
+        public void Construct(AudioService audioService, SignalBus signalBus, Player player)
         {
             _audioService = audioService;
             _signalBus = signalBus;
+            _player = player;
         }
 
         private void Awake()
@@ -65,7 +67,7 @@ namespace CafeOfFear
         private void AddedCash(GiveCashSignal giveCashSignal)
         {
             transform.position = _startPosition = giveCashSignal._gameObject.transform.position + _showOffsetPosition;
-            transform.rotation = giveCashSignal._gameObject.transform.rotation;
+            transform.LookAt(_player.transform);
             _endPosition = _startPosition + new Vector3(0.0f, 0.5f, 0.0f);
 
             AddedCash(giveCashSignal.CashValue);

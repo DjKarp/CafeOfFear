@@ -57,10 +57,20 @@ namespace CafeOfFear
 
         public IEnumerator ResetValue()
         {
-            yield return new WaitForSeconds(2.0f);
+            yield return new WaitForSeconds(20.0f);
 
             _animator.SetBool(_angryParams, false);
             _animator.SetBool(_happyParams, false);
+        }
+
+        public void ActivateAnimator()
+        {
+            _animator.enabled = true;
+        }
+
+        public void DeactivateAnimator()
+        {
+            _animator.enabled = false;
         }
     }
 }
