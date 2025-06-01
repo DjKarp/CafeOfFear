@@ -18,7 +18,6 @@ namespace CafeOfFear
 
         private MainPerson _mainPerson;
 
-        private Vector3 _startPosition;
         private float _duration = 1.0f;
 
         [Inject]
@@ -31,8 +30,6 @@ namespace CafeOfFear
         {
             _textMesh = GetComponentInChildren<TextMeshPro>();
             _textMesh.gameObject.SetActive(false);
-
-            _startPosition = transform.position;
         }
 
         public void ShowBadtext()
