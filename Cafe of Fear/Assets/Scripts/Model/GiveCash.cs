@@ -10,38 +10,40 @@ namespace CafeOfFear
     public class GiveCash : MonoBehaviour
     {
         [SerializeField] private Transform _backgroundTransform;
-        [SerializeField] private TextMeshPro _textMeshPro;
+        private TextMeshPro _textMeshPro;
+        private Sequence _tweenSequence;
 
         private Vector3 _startPosition;
         private Vector3 _endPosition;
-
         private Vector3 _startScale;
 
-        private float _duration = 1.0f;
-
-        private Sequence _tweenSequence;
+        private Vector3 _showOffsetPosition = new Vector3(0.1f, 0.6f, 0.0f);
+        private float _duration = 1.0f;        
 
         private AudioService _audioService;
+        private SignalBus _signalBus;
 
         [Inject]
-        public void Construct(AudioService audioService)
+        public void Construct(AudioService audioService, SignalBus signalBus)
         {
             _audioService = audioService;
+            _signalBus = signalBus;
         }
 
         private void Awake()
         {
-            _backgroundTransform.gameObject.SetActive(false);
-
+            _textMeshPro = GetComponentInChildren<TextMeshPro>();            
             _startScale = _backgroundTransform.localScale;
 
-            _startPosition = transform.position;
-            _endPosition = _startPosition + new Vector3(0.0f, 0.5f, 0.0f);
+            Hide();
+
+            _signalBus.Subscribe<GiveCashSignal>(AddedCash);
         }
 
-        public void Show()
+        private void Show()
         {
             _backgroundTransform.gameObject.SetActive(true);
+            _textMeshPro.enabled = true;
 
             _tweenSequence = DOTween.Sequence();
 
@@ -57,6 +59,22 @@ namespace CafeOfFear
         {
             _tweenSequence.Kill(true);
             _backgroundTransform.gameObject.SetActive(false);
+            _textMeshPro.enabled = false;
+        }
+
+        private void AddedCash(GiveCashSignal giveCashSignal)
+        {
+            transform.position = _startPosition = giveCashSignal._gameObject.transform.position + _showOffsetPosition;
+            transform.rotation = giveCashSignal._gameObject.transform.rotation;
+            _endPosition = _startPosition + new Vector3(0.0f, 0.5f, 0.0f);
+
+            AddedCash(giveCashSignal.CashValue);
+        }
+
+        private void AddedCash(float value)
+        {
+            _textMeshPro.text = string.Format("$ {0:0.0}", value);
+            Show();
         }
 
         private void OnDisable()

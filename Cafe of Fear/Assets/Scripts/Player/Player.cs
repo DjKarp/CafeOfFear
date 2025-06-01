@@ -6,8 +6,6 @@ namespace CafeOfFear
 {
     public class Player : MonoBehaviour
     {
-        private Transform _transform;
-
         private PlayerMovement _playerMovement;
         [SerializeField] private PlayerLook _playerLook;
 
@@ -16,7 +14,6 @@ namespace CafeOfFear
 
         private void Awake()
         {
-            _transform = gameObject.transform;
             _playerMovement = GetComponent<PlayerMovement>();
             _playerLook = GetComponent<PlayerLook>();
         }

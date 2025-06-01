@@ -7,17 +7,16 @@ namespace CafeOfFear
 {
     public class CatchItem : MonoBehaviour
     {
-        [SerializeField] private GiveCash _giveCash;
         [SerializeField] private TextPerson _textNPC;
         [SerializeField] private AnimationServiceMainNPC _animationService;
-        private MainPerson _mainPerson;
         private AudioService _audioService;
+        private SignalBus _signalBus;        
 
         [Inject]
-        public void Construct(MainPerson mainPerson, AudioService audioService)
+        public void Construct(AudioService audioService, SignalBus signalBus)
         {
-            _mainPerson = mainPerson;
             _audioService = audioService;
+            _signalBus = signalBus;
         }
 
 
@@ -33,8 +32,7 @@ namespace CafeOfFear
                 {
                     _audioService.PlayPersonSound(AudioService.PersonSound.Take_Coffee);
                     _audioService.PlayItemSound(AudioService.ItemSound.Cash);
-                    _giveCash.Show();
-                    _mainPerson.WalkBackNow(true);
+                    _signalBus.Fire(new GiveCashSignal(papperCup.Cash, this.gameObject));
                 }
                 else
                 {

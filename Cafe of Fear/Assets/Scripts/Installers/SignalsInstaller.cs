@@ -17,6 +17,10 @@ namespace CafeOfFear
             Container
                 .DeclareSignal<IsGameplayActiveSignal>()
                 .OptionalSubscriber();
+
+            Container
+                .DeclareSignal<GiveCashSignal>()
+                .OptionalSubscriber();
         }
     }
 }

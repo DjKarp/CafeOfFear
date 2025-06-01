@@ -12,6 +12,8 @@ namespace CafeOfFear
 
         private PlayerAndItems _playerAndItems;
 
+        public float Cash { get => 1.25f; }
+
         public enum PapperCupState
         {
             None,
