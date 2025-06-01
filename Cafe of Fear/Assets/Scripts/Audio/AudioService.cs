@@ -11,7 +11,7 @@ namespace CafeOfFear
         private Camera _camera;
 
         //Music
-        private string _horrorMusic = "event:/Music/Misic";
+        private string _horrorMusic = "event:/Music_Horror/Music";
 
         //Player
         private string _playerSteps = "event:/Player/PlayerSteps";
@@ -59,6 +59,8 @@ namespace CafeOfFear
         public void Init()
         {
             _camera = _cameraPlayer;
+
+            RuntimeManager.PlayOneShotAttached(_horrorMusic, _camera.gameObject);
 
             _heartbeatInstance = RuntimeManager.CreateInstance(_heartbeat);
             _heartbeatInstance.set3DAttributes(RuntimeUtils.To3DAttributes(_camera.gameObject.transform));
