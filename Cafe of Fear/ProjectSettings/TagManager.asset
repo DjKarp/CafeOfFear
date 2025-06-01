@@ -19,8 +19,8 @@ TagManager:
   - BodyPart
   - Ground
   - Slope
-  - 
-  - 
+  - Volume_Player
+  - Volume_Camera
   - 
   - 
   - 
