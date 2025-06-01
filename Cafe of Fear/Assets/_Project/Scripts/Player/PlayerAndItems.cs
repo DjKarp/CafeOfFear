@@ -17,7 +17,7 @@ namespace CafeOfFear
 
         // Raycast
         [SerializeField] private Transform _cameraTransform;
-        private float _rayDistance = 0.5f;
+        private float _rayDistance = 1.5f;
 
         private AudioService _audioService;
 
