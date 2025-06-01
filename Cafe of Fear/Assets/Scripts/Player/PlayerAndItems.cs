@@ -15,6 +15,10 @@ namespace CafeOfFear
         private IPickable _takedItem;
         private IFillinable _fillinableItems;
 
+        // Raycast
+        [SerializeField] private Transform _cameraTransform;
+        private float _rayDistance = 0.5f;
+
         private AudioService _audioService;
 
         [Inject]
@@ -26,6 +30,8 @@ namespace CafeOfFear
 
         private void Update()
         {
+            ChekItemsOnRaycast();
+
             if (_picketItem != null && Input.GetMouseButtonDown(0))
             {
                 PickItem();
@@ -37,49 +43,47 @@ namespace CafeOfFear
             }
         }
 
-        private void OnTriggerEnter(Collider other)
+        private void ChekItemsOnRaycast()
         {
             if (_takedItem == null)
             {
-                IPickable pickable = other.GetComponent<IPickable>();
-                if (pickable == null)
-                    pickable = other.GetComponentInParent<IPickable>();
+                Ray ray = new Ray(_cameraTransform.position, _cameraTransform.forward);
+                RaycastHit hit;
 
-                IFillinable fillinable = other.GetComponent<IFillinable>();
-
-                if (pickable != null && (fillinable == null || fillinable.CupState != PapperCup.PapperCupState.Filling))
+                if (Physics.Raycast(ray, out hit, _rayDistance))
                 {
-                    _fillinableItems = fillinable;
+                    IPickable pickable = hit.collider.GetComponent<IPickable>();
+                    if (pickable == null)
+                        pickable = hit.collider.GetComponentInParent<IPickable>();
 
-                    if (_picketItem == null)
+                    IFillinable fillinable = hit.collider.GetComponent<IFillinable>();
+
+                    if (pickable != null)
                     {
-                        SetNewPickebleItems(pickable);
+                        if (_picketItem != pickable && (fillinable == null || fillinable.CupState != PapperCup.PapperCupState.Filling))
+                        {
+                            _fillinableItems = fillinable;
+
+                            if (_picketItem == null)
+                            {
+                                SetNewPickebleItems(pickable);
+                            }
+                            else if (_picketItem != pickable)
+                            {
+                                _picketItem.HideOutline();
+                                SetNewPickebleItems(pickable);
+                            }
+                        }
                     }
-                    else if (_picketItem != pickable)
+                    else
                     {
-                        _picketItem.HideOutline();
-                        SetNewPickebleItems(pickable);
-                    }                    
-                }
-            }
-        }
-
-        private void OnTriggerExit(Collider other)
-        {
-            if (_takedItem == null)
-            {
-                IPickable pickable = other.GetComponent<IPickable>();
-                if (pickable == null)
-                    pickable = other.GetComponentInParent<IPickable>();
-
-                if (pickable != null)
-                {
-                    if (_picketItem == pickable)
-                    {
-                        _picketItem.HideOutline();
-                        _picketItem = null;
+                        if (_picketItem != null)
+                        {
+                            _picketItem.HideOutline();
+                            _picketItem = null;
+                        }
                     }
-                }
+                }                
             }
         }
 
