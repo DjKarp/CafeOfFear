@@ -1,7 +1,6 @@
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
-using Zenject;
 
 namespace CafeOfFear
 {
@@ -10,7 +9,6 @@ namespace CafeOfFear
         [SerializeField] private Camera _cameraPlayer;
         [SerializeField] private Camera _cameraCinemachine;
         private Camera _camera;
-        private Player _player;
 
         //Music
         private string _horrorMusic = "event:/Music/Misic";
@@ -57,12 +55,6 @@ namespace CafeOfFear
         private string _finalFear = "event:/Sound_Screamer/SoundFinalFear";
 
         public enum FinalFearSound { ChangePerson, FinalFear }
-
-        [Inject]
-        public void Construct(Player player)
-        {
-            _player = player;
-        }
 
         public void Init()
         {
