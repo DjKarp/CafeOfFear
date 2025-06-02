@@ -1,6 +1,11 @@
+<p align="center">
+  <img src="https://redleggames.com//Games/CafeOfFear/Icon.png" alt="Cafe on Fear Icon" width="256" height="256"/>
+</p>
+
 <h1 align="center">Cafe of Fear  — Atmospheric Unity Scene</h1>
 
 <p align="center"><b>Короткий 5-минутный игровой опыт в уютном кафе с неожиданным поворотом..</b></p>
+
 
 ## 🎮 Описание
 
