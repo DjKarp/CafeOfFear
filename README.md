@@ -58,6 +58,7 @@ Raycast-система выделения объектов в центре эк�
 Скачай архив, распакуй и запусти готовый Build:
 
 https://github.com/DjKarp/CafeOfFear/releases
+
 https://drive.google.com/file/d/1j5J9bLb_fav-6-gnc_OQJc19tW1c7BhG/view?usp=sharing
 
 
@@ -108,23 +109,22 @@ https://github.com/DjKarp/CafeOfFear.git
 ## 🎥 Скриншоты
 
 <p align="center">
-  <img src="https://redleggames.com/images/Games/CafeOfFear/Screens/CafeOfFear_Screen_01.jpg" width="300"/>
-  <img src="https://redleggames.com/images/Games/CafeOfFear/Screens/CafeOfFear_Screen_02.jpg" width="300"/>
-  <img src="https://redleggames.com/images/Games/CafeOfFear/Screens/CafeOfFear_Screen_03.jpg" width="300"/>
-  <img src="https://redleggames.com/images/Games/CafeOfFear/Screens/CafeOfFear_Screen_04.jpg" width="300"/>
-  <img src="https://redleggames.com/images/Games/CafeOfFear/Screens/CafeOfFear_Screen_05.jpg" width="300"/>
-  <img src="https://redleggames.com/images/Games/CafeOfFear/Screens/CafeOfFear_Screen_06.jpg" width="300"/>
-  <img src="https://redleggames.com/images/Games/CafeOfFear/Screens/CafeOfFear_Screen_07.jpg" width="300"/>
-  <img src="https://redleggames.com/images/Games/CafeOfFear/Screens/CafeOfFear_Screen_08.jpg" width="300"/>
-  <img src="https://redleggames.com/images/Games/CafeOfFear/Screens/CafeOfFear_Screen_09.jpg" width="300"/>
+  <img src="https://redleggames.com/Games/CafeOfFear/Screens/CafeOfFear_Screen_01.jpg" width="300"/>
+  <img src="https://redleggames.com/Games/CafeOfFear/Screens/CafeOfFear_Screen_02.jpg" width="300"/>
+  <img src="https://redleggames.com/Games/CafeOfFear/Screens/CafeOfFear_Screen_03.jpg" width="300"/>
+  <img src="https://redleggames.com/Games/CafeOfFear/Screens/CafeOfFear_Screen_04.jpg" width="300"/>
+  <img src="https://redleggames.com/Games/CafeOfFear/Screens/CafeOfFear_Screen_05.jpg" width="300"/>
+  <img src="https://redleggames.com/Games/CafeOfFear/Screens/CafeOfFear_Screen_06.jpg" width="300"/>
+  <img src="https://redleggames.com/Games/CafeOfFear/Screens/CafeOfFear_Screen_08.jpg" width="300"/>
+  <img src="https://redleggames.com/Games/CafeOfFear/Screens/CafeOfFear_Screen_09.jpg" width="300"/>
 </p>
 
 ## 🎥 GIF
 
 <p align="center">
-  <img src="https://redleggames.com/images/Games/CafeOfFear/Gif/CafeOfFear_Gameplay_cut_001.gif"/>
-  <img src="https://redleggames.com/images/Games/CafeOfFear/Gif/CafeOfFear_Gameplay_cut_002.gif"/>
-  <img src="https://redleggames.com/images/Games/CafeOfFear/Gif/CafeOfFear_Gameplay_cut_003.gif"/>
+  <img src="https://redleggames.com/Games/CafeOfFear/Gif/CafeOfFear_Gameplay_cut_001.gif"/>
+  <img src="https://redleggames.com/Games/CafeOfFear/Gif/CafeOfFear_Gameplay_cut_002.gif"/>
+  <img src="https://redleggames.com/Games/CafeOfFear/Gif/CafeOfFear_Gameplay_cut_003.gif"/>
 </p>
 
 ## 🎥 Видео
