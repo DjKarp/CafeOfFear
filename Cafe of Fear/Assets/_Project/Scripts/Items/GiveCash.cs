@@ -17,7 +17,7 @@ namespace CafeOfFear
         private Vector3 _endPosition;
         private Vector3 _startScale;
 
-        private Vector3 _showOffsetPosition = new Vector3(0.1f, 0.6f, 0.0f);
+        private Vector3 _showOffsetPosition = new Vector3(0.3f, 0.6f, 0.0f);
         private float _duration = 1.0f;        
 
         private AudioService _audioService;
@@ -67,7 +67,6 @@ namespace CafeOfFear
         private void AddedCash(GiveCashSignal giveCashSignal)
         {
             transform.position = _startPosition = giveCashSignal._gameObject.transform.position + _showOffsetPosition;
-            transform.LookAt(_player.transform);
             _endPosition = _startPosition + new Vector3(0.0f, 0.5f, 0.0f);
 
             AddedCash(giveCashSignal.CashValue);

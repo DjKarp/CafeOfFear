@@ -7,6 +7,8 @@ namespace CafeOfFear
 {
     public class CoffeeFillingPlace : MonoBehaviour
     {
+        private BoxCollider _boxCollider;
+
         private PlayerAndItems _playerAndItems;
         private AudioService _audioService;
 
@@ -20,6 +22,11 @@ namespace CafeOfFear
             _audioService = audioService;
         }
 
+        private void Awake()
+        {
+            _boxCollider = GetComponent<BoxCollider>();
+        }
+
         private void OnTriggerEnter(Collider other)
         {
             if (_fillinableItem == null)
@@ -30,6 +37,7 @@ namespace CafeOfFear
                 if (fillinable != null && fillinable.CupState == PapperCup.PapperCupState.None)
                 {
                     _audioService.PlayItemSound(AudioService.ItemSound.Install_Cup);
+                    _boxCollider.enabled = false;
 
                     _playerAndItems.ReseaseItem();
 
@@ -45,7 +53,10 @@ namespace CafeOfFear
         public void CoffeCupTake(IFillinable fillinable)
         {
             if (fillinable == _fillinableItem)
+            {
                 _fillinableItem = null;
+                _boxCollider.enabled = true;
+            }
         }
     }
 }

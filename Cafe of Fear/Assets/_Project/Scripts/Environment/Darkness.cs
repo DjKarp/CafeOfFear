@@ -9,7 +9,7 @@ namespace CafeOfFear
     {
         private MeshRenderer _meshRenderer;
         private Tween _tween;
-        private float _duration = 120;
+        private float _duration = 60;
 
         private void Awake()
         {
@@ -20,7 +20,7 @@ namespace CafeOfFear
         {
             _tween =
                 _meshRenderer.material
-                .DOFade(0.84f, _duration)
+                .DOFade(0.9f, _duration)
                 .From(0.0f);
         }
 
