@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 using DG.Tweening;
@@ -19,7 +17,6 @@ namespace CafeOfFear
 
         private Tween _tween;
         private Tween _tweenRotate;
-        //private Sequence _tweenSequence;
 
         [Inject]
         public void Construct(Player player)

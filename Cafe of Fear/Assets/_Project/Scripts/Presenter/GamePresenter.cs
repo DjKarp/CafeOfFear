@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using Zenject;
@@ -85,16 +84,13 @@ namespace CafeOfFear
 
         private IEnumerator FinalFear()
         {
-            yield return new WaitForSeconds(1.0f);
-
             _audioService.PlayFinalFearSound(AudioService.FinalFearSound.ChangePerson);
             _audioService.PlayFinalFearSound(AudioService.FinalFearSound.FinalFear);
             _mainPerson.gameObject.SetActive(false);
             _vampireTransform.position = _mainPerson.transform.position;
             _finalFear.SetActive(true);
 
-            // !!!!!!!!!!!!
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(5.0f);
 
             _fadeService.Finish();
         }

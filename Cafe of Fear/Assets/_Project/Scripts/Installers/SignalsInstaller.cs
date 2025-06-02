@@ -1,4 +1,3 @@
-using UnityEngine;
 using Zenject;
 
 namespace CafeOfFear
@@ -14,10 +13,6 @@ namespace CafeOfFear
 
         private void BindGameplaySignals()
         {
-            Container
-                .DeclareSignal<IsGameplayActiveSignal>()
-                .OptionalSubscriber();
-
             Container
                 .DeclareSignal<GiveCashSignal>()
                 .OptionalSubscriber();
