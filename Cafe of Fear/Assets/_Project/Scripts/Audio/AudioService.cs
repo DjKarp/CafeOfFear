@@ -39,14 +39,14 @@ namespace CafeOfFear
 
         public enum ItemSound { Coffeemachine, PickUp, Install_Cup, Install_CupCap, ThrowingObject, FallItems, SoundLight, Cash, Finish_Filled, ForkDropped, GlassFalling }
 
-        //Person
+        //Visitor
         private string _stepHramoy = "event:/Person/Step_Hramoy";
         private EventInstance _stepHramoyInstance;
         private string _appearancePerson = "event:/Person/AppearancePerson/AppearancePerson";        
         private string _badItemPerson = "event:/Person/Bad_Item_For_Person_Attention";
-        private string _personAngry = "event:/Person/Person_Angry";
-        private string _personTakeCoffee = "event:/Person/Person_Take_Coffee";
-        private string _personWalkBack = "event:/Person/PersonWalkBack";
+        private string _visitorAngry = "event:/Person/Person_Angry";
+        private string _visitorTakeCoffee = "event:/Person/Person_Take_Coffee";
+        private string _visitorWalkBack = "event:/Person/PersonWalkBack";
 
         public enum PersonSound { Appearance, Bad_Item, Angry, Take_Coffee, WalkBack }
 
@@ -115,9 +115,9 @@ namespace CafeOfFear
             {
                 case PersonSound.Appearance: soundEvent = _appearancePerson; break;
                 case PersonSound.Bad_Item: soundEvent = _badItemPerson; break;
-                case PersonSound.Angry: soundEvent = _personAngry; break;
-                case PersonSound.Take_Coffee: soundEvent = _personTakeCoffee; break;
-                case PersonSound.WalkBack: soundEvent = _personWalkBack; break;
+                case PersonSound.Angry: soundEvent = _visitorAngry; break;
+                case PersonSound.Take_Coffee: soundEvent = _visitorTakeCoffee; break;
+                case PersonSound.WalkBack: soundEvent = _visitorWalkBack; break;
             }
 
             RuntimeManager.PlayOneShotAttached(soundEvent, fromObject == null ? _camera.gameObject : fromObject);

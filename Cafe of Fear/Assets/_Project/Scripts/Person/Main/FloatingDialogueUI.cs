@@ -5,7 +5,7 @@ using Zenject;
 
 namespace CafeOfFear
 {
-    public class TextPerson : MonoBehaviour
+    public class FloatingDialogueUI : MonoBehaviour
     {
         [SerializeField] private string[] _badAnsvert;
         private string _startText = "Give me some \ncoffee, please!";

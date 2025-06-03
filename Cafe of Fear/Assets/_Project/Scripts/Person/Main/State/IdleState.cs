@@ -1,30 +1,30 @@
 namespace CafeOfFear
 {
-    public class IdleState : IMainPersonState
+    public class IdleState : IVisitorState
     {
-        private MainPerson _mainPerson;
+        private Visitor _visitor;
 
-        public void EnterState(MainPerson mainPerson)
+        public void EnterState(Visitor visitor)
         {
-            _mainPerson = mainPerson;
+            _visitor = visitor;
 
-            _mainPerson?.AudioService.StopPersonWalkToPlayer();
-            _mainPerson?.GamePresenter.ActivatePlayer();
-            _mainPerson?.AnimationService.StopWalk();
-            _mainPerson?.TextNPC.ShowText();
+            _visitor?.AudioService.StopPersonWalkToPlayer();
+            _visitor?.GamePresenter.ActivatePlayer();
+            _visitor?.AnimationService.StopWalk();
+            _visitor?.DialogueDisplay.ShowText();
         }
 
         public void UpdateState()
         {
-            _mainPerson?.PlayerFear();
+            _visitor?.PlayerFear();
 
-            if (_mainPerson.IsPlayerLookOnNPC(true))
+            if (_visitor.IsPlayerLookOnNPC(true))
             {
-                _mainPerson?.PullingHead.DeactivatePulling();
+                _visitor?.PullingHead.DeactivatePulling();
             }
             else
             {
-                _mainPerson?.PullingHead.ActivatePulling();
+                _visitor?.PullingHead.ActivatePulling();
             }
         }
     }

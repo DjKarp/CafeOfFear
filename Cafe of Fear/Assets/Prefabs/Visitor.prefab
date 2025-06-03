@@ -630,7 +630,7 @@ GameObject:
   - component: {fileID: 32785170785643130}
   - component: {fileID: 6711360102110013882}
   m_Layer: 0
-  m_Name: NPC_Main
+  m_Name: Visitor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -667,7 +667,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13d214c690a3a5640972a830fc216463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NpcState: 0
 --- !u!114 &32785170785643130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,7 +676,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2796853425272753487}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8998554aef5cbaa428e458cf8d0f799c, type: 3}
+  m_Script: {fileID: 11500000, guid: ea4074e348545c74e8a92a3c5bbd841e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!95 &6711360102110013882
@@ -1099,7 +1098,7 @@ GameObject:
   - component: {fileID: 4621347281445752449}
   - component: {fileID: 5299256332120555846}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: VisitorItemReceiver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1204,7 +1203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb7166e0d1657e4c91eb4881c462170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _textNPC: {fileID: 6858922044481541995}
+  _npcDialogueDisplay: {fileID: 0}
   _animationService: {fileID: 32785170785643130}
 --- !u!1 &5220241401032854380
 GameObject:
@@ -1474,7 +1473,7 @@ GameObject:
   - component: {fileID: 4443111132337795018}
   - component: {fileID: 6858922044481541995}
   m_Layer: 0
-  m_Name: TextNPC
+  m_Name: FloatingDialogueUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

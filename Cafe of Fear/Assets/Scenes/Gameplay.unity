@@ -425,17 +425,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8a10402fab7f10e40b7cea85b2c5b547, type: 3}
---- !u!114 &27199582 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3037403636456187691, guid: 8a10402fab7f10e40b7cea85b2c5b547, type: 3}
-  m_PrefabInstance: {fileID: 27199581}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 362f6cb09fd8f574698598d8dc3c703e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &27199583 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2131168702276048264, guid: 8a10402fab7f10e40b7cea85b2c5b547, type: 3}
@@ -5922,7 +5911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _coffeeFillingPlace: {fileID: 1724683420}
-  _positionMainNPC: {fileID: 1793169836}
+  _visitorTargetPoint: {fileID: 1793169836}
 --- !u!1001 &290598569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30933,7 +30922,7 @@ MonoBehaviour:
   _gamePresenter: {fileID: 711813835}
   _playerAndItems: {fileID: 9110997409589796308}
   _player: {fileID: 9110997409589796307}
-  _NPC_Main: {fileID: 298260812}
+  _visitor: {fileID: 298260812}
 --- !u!1 &1639949033
 GameObject:
   m_ObjectHideFlags: 0
@@ -33279,7 +33268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fadeService: {fileID: 1201059738}
-  _giveCash: {fileID: 27199582}
+  _floatingCashDisplay: {fileID: 3037403636456187691, guid: 8a10402fab7f10e40b7cea85b2c5b547, type: 3}
 --- !u!1001 &1758924309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33626,7 +33615,7 @@ GameObject:
   - component: {fileID: 1793169835}
   - component: {fileID: 1793169836}
   m_Layer: 0
-  m_Name: MainNPCPosition
+  m_Name: VisitorTargetPoint
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -44614,7 +44603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2796853425272753487, guid: 81c7a48453493594b90c6d19b94e761e, type: 3}
       propertyPath: m_Name
-      value: MainPerson
+      value: 'Visitor '
       objectReference: {fileID: 0}
     - target: {fileID: 2796853425272753487, guid: 81c7a48453493594b90c6d19b94e761e, type: 3}
       propertyPath: m_IsActive
@@ -44758,7 +44747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5107302421575014499, guid: 81c7a48453493594b90c6d19b94e761e, type: 3}
       propertyPath: m_Name
-      value: CatchItem
+      value: VisitorItemReceiver
       objectReference: {fileID: 0}
     - target: {fileID: 5176324057170840384, guid: 81c7a48453493594b90c6d19b94e761e, type: 3}
       propertyPath: m_LocalPosition.x

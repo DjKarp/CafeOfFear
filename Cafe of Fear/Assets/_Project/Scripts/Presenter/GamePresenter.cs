@@ -12,16 +12,16 @@ namespace CafeOfFear
         [SerializeField] private GameObject _cinemaCamera;
 
         private GameObject _player;                
-        private MainPerson _mainPerson;
+        private Visitor _visitor;
         private AudioService _audioService;
         private FadeService _fadeService;
 
         private float _timeWaitBeforeAppearPerson = 15.0f;
 
         [Inject]
-        public void Counstruct(MainPerson mainPerson, AudioService audioService, FadeService fadeService, Player player)
+        public void Counstruct(Visitor visitor, AudioService audioService, FadeService fadeService, Player player)
         {
-            _mainPerson = mainPerson;
+            _visitor = visitor;
             _audioService = audioService;
             _fadeService = fadeService;
             _player = player.gameObject;
@@ -36,7 +36,7 @@ namespace CafeOfFear
         {
             yield return new WaitForSeconds(_timeWaitBeforeAppearPerson);
 
-            _mainPerson.gameObject.SetActive(true);
+            _visitor.gameObject.SetActive(true);
         }
 
         public void StartLightFlash()
@@ -86,8 +86,8 @@ namespace CafeOfFear
         {
             _audioService.PlayFinalFearSound(AudioService.FinalFearSound.ChangePerson);
             _audioService.PlayFinalFearSound(AudioService.FinalFearSound.FinalFear);
-            _mainPerson.gameObject.SetActive(false);
-            _vampireTransform.position = _mainPerson.transform.position;
+            _visitor.gameObject.SetActive(false);
+            _vampireTransform.position = _visitor.transform.position;
             _finalFear.SetActive(true);
 
             yield return new WaitForSeconds(5.0f);

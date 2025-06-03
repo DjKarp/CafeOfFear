@@ -5,7 +5,7 @@ using Zenject;
 
 namespace CafeOfFear
 {
-    public class GiveCash : MonoBehaviour
+    public class FloatingCashDisplay : MonoBehaviour
     {
         [SerializeField] private Transform _backgroundTransform;
         private TextMeshPro _textMeshPro;

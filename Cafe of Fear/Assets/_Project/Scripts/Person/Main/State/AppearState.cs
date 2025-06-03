@@ -2,30 +2,30 @@ using UnityEngine;
 
 namespace CafeOfFear
 {
-    public class AppearState : IMainPersonState
+    public class AppearState : IVisitorState
     {
-        private MainPerson _mainPerson;
+        private Visitor _visitor;
         private float _startDelay = 10.0f;
 
-        public void EnterState(MainPerson mainPerson)
+        public void EnterState(Visitor visitor)
         {
-            _mainPerson = mainPerson;
+            _visitor = visitor;
         }
 
         public void UpdateState()
         {
             if (_startDelay <= 0.0f)
             {
-                if (_mainPerson?.SkinnedMesh.enabled == false)
+                if (_visitor?.SkinnedMesh.enabled == false)
                 {
-                    _mainPerson.SkinnedMesh.enabled = true;
+                    _visitor.SkinnedMesh.enabled = true;
                     _startDelay = 2.0f;
                 }
                 else
                 {
-                    if (_mainPerson.IsPlayerLookOnNPC())
+                    if (_visitor.IsPlayerLookOnNPC())
                     {
-                        _mainPerson?.ChangeState(new WalkToPlayerState());
+                        _visitor?.ChangeState(new WalkToPlayerState());
                     }
                 }
             }

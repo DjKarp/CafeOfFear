@@ -3,41 +3,41 @@ using UnityEngine;
 
 namespace CafeOfFear
 {
-    public class WalkToPlayerState : IMainPersonState
+    public class WalkToPlayerState : IVisitorState
     {
-        private MainPerson _mainPerson;
+        private Visitor _visitor;
 
-        public void EnterState(MainPerson mainPerson)
+        public void EnterState(Visitor visitor)
         {
-            _mainPerson = mainPerson;
+            _visitor = visitor;
 
-            _mainPerson?.StartCoroutine(DelayBeforeCinematic());
+            _visitor?.StartCoroutine(DelayBeforeCinematic());
         }
 
         public void UpdateState()
         {
-            _mainPerson?.PlayerFear();
-            float distance = Vector3.Distance(_mainPerson.transform.position, _mainPerson.PointMainNPC.Position);
+            _visitor?.PlayerFear();
+            float distance = Vector3.Distance(_visitor.transform.position, _visitor.VisitorTargetPoint.Position);
 
             if (distance < 0.5f)
             {
-                _mainPerson?.ChangeState(new IdleState());
+                _visitor?.ChangeState(new IdleState());
             }
         }
 
         private IEnumerator DelayBeforeCinematic()
         {
-            _mainPerson?.AudioService.PlayPersonSound(AudioService.PersonSound.Appearance);
-            _mainPerson?.GamePresenter.StartLightFlash();
+            _visitor?.AudioService.PlayPersonSound(AudioService.PersonSound.Appearance);
+            _visitor?.GamePresenter.StartLightFlash();
 
             yield return new WaitForSeconds(3.0f);
 
-            _mainPerson?.AnimationService.StartWalkToPlayer();
-            _mainPerson?.GamePresenter.StartLightFlash();
+            _visitor?.AnimationService.StartWalkToPlayer();
+            _visitor?.GamePresenter.StartLightFlash();
 
             yield return new WaitForSeconds(8.0f);
 
-            _mainPerson?.AudioService.StartPersonWalkToPlayer(_mainPerson?.transform);
+            _visitor?.AudioService.StartPersonWalkToPlayer(_visitor?.transform);
         }
     }
 }

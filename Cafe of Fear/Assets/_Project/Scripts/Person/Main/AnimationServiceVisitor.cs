@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace CafeOfFear
 {
-    public class AnimationServiceMainNPC : MonoBehaviour
+    public class AnimationServiceVisitor : MonoBehaviour
     {
         private Animator _animator;
 

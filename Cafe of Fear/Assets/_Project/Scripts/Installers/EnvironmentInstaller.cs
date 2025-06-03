@@ -6,7 +6,7 @@ namespace CafeOfFear
     public class EnvironmentInstaller : MonoInstaller
     {
         [SerializeField] private CoffeeFillingPlace _coffeeFillingPlace;
-        [SerializeField] private PointMainNPC _positionMainNPC;
+        [SerializeField] private VisitorTargetPoint _visitorTargetPoint;
 
         public override void InstallBindings()
         {
@@ -17,8 +17,8 @@ namespace CafeOfFear
         private void BindPositionForNPC()
         {
             Container
-                .Bind<PointMainNPC>()
-                .FromInstance(_positionMainNPC)
+                .Bind<VisitorTargetPoint>()
+                .FromInstance(_visitorTargetPoint)
                 .AsCached();
         }
 

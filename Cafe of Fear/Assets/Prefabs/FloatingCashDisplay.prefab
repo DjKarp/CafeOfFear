@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2131168702276048264}
   - component: {fileID: 3037403636456187691}
   m_Layer: 0
-  m_Name: GiveCash
+  m_Name: FloatingCashDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -3,26 +3,26 @@ using Zenject;
 
 namespace CafeOfFear
 {
-    public class MainPerson : MonoBehaviour
+    public class Visitor : MonoBehaviour
     {
         public SkinnedMeshRenderer SkinnedMesh { get; private set; }
-        public AnimationServiceMainNPC AnimationService { get; private set; }
-        public TextPerson TextNPC { get; private set; }
+        public AnimationServiceVisitor AnimationService { get; private set; }
+        public FloatingDialogueUI DialogueDisplay { get; private set; }
         public PullingHead PullingHead { get; private set; }        
-        public PointMainNPC PointMainNPC { get; private set; }
+        public VisitorTargetPoint VisitorTargetPoint { get; private set; }
         public GamePresenter GamePresenter { get; private set; }
         public AudioService AudioService { get; private set; }
         public bool IsHappy { get; private set; }
 
         private Player _player;
         private SignalBus _signalBus;
-        private IMainPersonState _currentState;
+        private IVisitorState _currentState;
 
         [Inject]
-        public void Construct(Player player, PointMainNPC pointMainNPC, GamePresenter gamePresenter, AudioService audioService, SignalBus signalBus)
+        public void Construct(Player player, VisitorTargetPoint visitorTargetPoint, GamePresenter gamePresenter, AudioService audioService, SignalBus signalBus)
         {
             _player = player;
-            PointMainNPC = pointMainNPC;
+            VisitorTargetPoint = visitorTargetPoint;
             GamePresenter = gamePresenter;
             AudioService = audioService;
             _signalBus = signalBus;
@@ -30,8 +30,8 @@ namespace CafeOfFear
 
         private void Awake()
         {
-            AnimationService = GetComponent<AnimationServiceMainNPC>();
-            TextNPC = GetComponentInChildren<TextPerson>();
+            AnimationService = GetComponent<AnimationServiceVisitor>();
+            DialogueDisplay = GetComponentInChildren<FloatingDialogueUI>();
             SkinnedMesh = GetComponentInChildren<SkinnedMeshRenderer>();
             SkinnedMesh.enabled = false;
             PullingHead = GetComponent<PullingHead>();
@@ -49,7 +49,7 @@ namespace CafeOfFear
             _currentState?.UpdateState();
         }
 
-        public void ChangeState(IMainPersonState mainPersonState)
+        public void ChangeState(IVisitorState mainPersonState)
         {
             _currentState = mainPersonState;
             _currentState?.EnterState(this);

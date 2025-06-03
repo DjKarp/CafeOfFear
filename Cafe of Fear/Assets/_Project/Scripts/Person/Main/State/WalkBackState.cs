@@ -2,35 +2,35 @@ using UnityEngine;
 
 namespace CafeOfFear
 {
-    public class WalkBackState : IMainPersonState
+    public class WalkBackState : IVisitorState
     {
-        private MainPerson _mainPerson;
+        private Visitor _visitor;
         private float _walkBackDistance = 7.4f;
 
-        public void EnterState(MainPerson mainPerson)
+        public void EnterState(Visitor visitor)
         {
-            _mainPerson = mainPerson;
+            _visitor = visitor;
 
-            _mainPerson?.GamePresenter.DeactivatePlayer();
-            _mainPerson?.AudioService.PlayPersonSound(AudioService.PersonSound.WalkBack);
+            _visitor?.GamePresenter.DeactivatePlayer();
+            _visitor?.AudioService.PlayPersonSound(AudioService.PersonSound.WalkBack);
 
-            if (_mainPerson.IsHappy)
-                _mainPerson?.AnimationService.Happy();
+            if (_visitor.IsHappy)
+                _visitor?.AnimationService.Happy();
             else
-                _mainPerson?.AnimationService.WalkBack();
+                _visitor?.AnimationService.WalkBack();
         }
 
         public void UpdateState()
         {
-            float distance = Vector3.Distance(_mainPerson.transform.position, _mainPerson.PointMainNPC.Position);
+            float distance = Vector3.Distance(_visitor.transform.position, _visitor.VisitorTargetPoint.Position);
 
-            _mainPerson?.AudioService.SetPlayerHeartParam(_walkBackDistance / distance);
+            _visitor?.AudioService.SetPlayerHeartParam(_walkBackDistance / distance);
 
             if (distance > _walkBackDistance)
             {
-                _mainPerson?.AnimationService.StopAnimation();
-                _mainPerson?.GamePresenter.StartFinalFear();
-                _mainPerson?.ChangeState(null);
+                _visitor?.AnimationService.StopAnimation();
+                _visitor?.GamePresenter.StartFinalFear();
+                _visitor?.ChangeState(null);
             }
         }
     }

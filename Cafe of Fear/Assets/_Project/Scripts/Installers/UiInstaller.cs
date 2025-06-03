@@ -6,11 +6,12 @@ namespace CafeOfFear
     public class UiInstaller : MonoInstaller
     {
         [SerializeField] public FadeService _fadeService;
-        [SerializeField] public GiveCash _giveCash;
+        [SerializeField] public FloatingCashDisplay _floatingCashDisplay;
 
         public override void InstallBindings()
         {
             BindServiceUI();
+            BindGiveCashInfo();
         }
 
         private void BindServiceUI()
@@ -24,8 +25,8 @@ namespace CafeOfFear
         private void BindGiveCashInfo()
         {
             Container
-                .Bind<GiveCash>()
-                .FromInstance(_giveCash)
+                .Bind<FloatingCashDisplay>()
+                .FromInstance(_floatingCashDisplay)
                 .AsCached();
                 
         }

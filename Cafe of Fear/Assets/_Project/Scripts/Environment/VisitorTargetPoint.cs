@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace CafeOfFear
 {
-    public class PointMainNPC : MonoBehaviour
+    public class VisitorTargetPoint : MonoBehaviour
     {
         private Transform _transform;
 

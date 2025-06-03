@@ -7,7 +7,7 @@ namespace CafeOfFear
     public class PullingHead : MonoBehaviour
     {
         [SerializeField] private Transform _headTransform;
-        private AnimationServiceMainNPC _animationService;
+        private AnimationServiceVisitor _animationService;
         private Player _player;
 
         private Vector3 _startPosition;
@@ -26,7 +26,7 @@ namespace CafeOfFear
 
         private void Awake()
         {
-            _animationService = GetComponent<AnimationServiceMainNPC>();
+            _animationService = GetComponent<AnimationServiceVisitor>();
         }
 
         public void ActivatePulling()

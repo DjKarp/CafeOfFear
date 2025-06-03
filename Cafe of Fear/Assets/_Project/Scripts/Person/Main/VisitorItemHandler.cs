@@ -3,10 +3,10 @@ using Zenject;
 
 namespace CafeOfFear
 {
-    public class CatchItem : MonoBehaviour
+    public class VisitorItemReceiver : MonoBehaviour
     {
-        [SerializeField] private TextPerson _textNPC;
-        [SerializeField] private AnimationServiceMainNPC _animationService;
+        [SerializeField] private FloatingDialogueUI _npcDialogueDisplay;
+        [SerializeField] private AnimationServiceVisitor _animationService;
         private AudioService _audioService;
         private SignalBus _signalBus;        
 
@@ -35,7 +35,7 @@ namespace CafeOfFear
                 else
                 {
                     _audioService.PlayPersonSound(AudioService.PersonSound.Bad_Item);
-                    _textNPC.ShowBadtext();
+                    _npcDialogueDisplay.ShowBadtext();
                     _animationService.Angry();
                 }
 
