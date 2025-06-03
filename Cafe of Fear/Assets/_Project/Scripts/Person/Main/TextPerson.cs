@@ -13,15 +13,14 @@ namespace CafeOfFear
 
         private TextMeshPro _textMesh;
         private Sequence _tweenSequence;
-
-        private MainPerson _mainPerson;
+        private SignalBus _signalBus;
 
         private float _duration = 1.0f;
 
         [Inject]
-        public void Construct(MainPerson mainPerson)
+        public void Construct(SignalBus signalBus)
         {
-            _mainPerson = mainPerson;
+            _signalBus = signalBus;
         }
 
         private void Awake()
@@ -40,7 +39,7 @@ namespace CafeOfFear
             else
             {
                 if (_badTextNumber >= _badAnsvert.Length)
-                    _mainPerson.WalkBackNow(false);
+                    _signalBus.Fire(new GiveCashSignal(0.0f, null));
             }
         }
 
