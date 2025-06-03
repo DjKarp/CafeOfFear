@@ -3327,6 +3327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 133617029}
+  - component: {fileID: 133617030}
   m_Layer: 0
   m_Name: Lighting
   m_TagString: Untagged
@@ -3351,6 +3352,19 @@ Transform:
   - {fileID: 1163368086}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &133617030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133617028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5aa530c8e4839149b92b98c8d1dc231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lightParentGameObject: {fileID: 1864782910}
 --- !u!1 &134774120
 GameObject:
   m_ObjectHideFlags: 0
@@ -5912,6 +5926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _coffeeFillingPlace: {fileID: 1724683420}
   _visitorTargetPoint: {fileID: 1793169836}
+  _lightFlasher: {fileID: 133617030}
 --- !u!1001 &290598569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13890,7 +13905,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _finalFear: {fileID: 484560113}
   _vampireTransform: {fileID: 2023880953}
-  _light: {fileID: 1864782910}
   _cinemaCamera: {fileID: 1712958421}
 --- !u!1 &717085044
 GameObject:

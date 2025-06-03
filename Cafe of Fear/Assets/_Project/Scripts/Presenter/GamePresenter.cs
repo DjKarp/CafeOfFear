@@ -8,23 +8,24 @@ namespace CafeOfFear
     {
         [SerializeField] private GameObject _finalFear;
         [SerializeField] private Transform _vampireTransform;
-        [SerializeField] private GameObject _light;
         [SerializeField] private GameObject _cinemaCamera;
 
         private GameObject _player;                
         private Visitor _visitor;
         private AudioService _audioService;
         private FadeService _fadeService;
+        private LightFlasher _lightFlasher;
 
         private float _timeWaitBeforeAppearPerson = 15.0f;
 
         [Inject]
-        public void Counstruct(Visitor visitor, AudioService audioService, FadeService fadeService, Player player)
+        public void Counstruct(Visitor visitor, AudioService audioService, FadeService fadeService, Player player, LightFlasher lightFlasher)
         {
             _visitor = visitor;
             _audioService = audioService;
             _fadeService = fadeService;
             _player = player.gameObject;
+            _lightFlasher = lightFlasher;
         }
 
         public void Init()
@@ -37,13 +38,7 @@ namespace CafeOfFear
             yield return new WaitForSeconds(_timeWaitBeforeAppearPerson);
 
             _visitor.gameObject.SetActive(true);
-        }
-
-        public void StartLightFlash()
-        {
-            DeactivatePlayer();
-            StartCoroutine(LightFlash());            
-        }
+        }        
 
         public void ActivatePlayer()
         {
@@ -62,24 +57,15 @@ namespace CafeOfFear
             _player.SetActive(false);
         }
 
-        public void StartFinalFear()
+        public void StartLightFlash()
         {
-            StartCoroutine(LightFlash(true));
+            DeactivatePlayer();
+            _lightFlasher.StartLightFlashing();
         }
 
-        private IEnumerator LightFlash(bool isFinal = false)
+        public void StartFinalFear()
         {
-            _audioService.PlayItemSound(AudioService.ItemSound.SoundLight);
-            int lightFlashCount = isFinal ? 9 : 15;
-
-            for (int i = 1; i < lightFlashCount; i++)
-            {
-                _light.SetActive(i%2 == 0);
-                yield return new WaitForSeconds(0.2f);
-            }
-
-            if (isFinal)
-                StartCoroutine(FinalFear());
+            _lightFlasher.StartLightFlashing(true, () => StartCoroutine(FinalFear()));
         }
 
         private IEnumerator FinalFear()
