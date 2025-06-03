@@ -63,14 +63,19 @@ namespace CafeOfFear
 
         public bool IsPlayerLookOnNPC(bool isPulling = false)
         {
-            float angle = Vector3.Angle(_player.PlayerLook, transform.position - _player.Position);
-            
+            Vector3 personToPlayerVector = transform.position - _player.Position;
+
+            float angle = Vector3.Angle(
+                new Vector3(_player.PlayerVectorForward.x, 0.0f, _player.PlayerVectorForward.z).normalized,
+                new Vector3(personToPlayerVector.x, 0.0f, personToPlayerVector.z).normalized
+                );
+
             return angle < (isPulling ? 45 : 20);
         }
 
         public void PlayerFear()
         {
-            float angle = Vector3.Angle(_player.PlayerLook, transform.position - _player.Position);
+            float angle = Vector3.Angle(_player.PlayerVectorForward, transform.position - _player.Position);
 
             AudioService.SetPlayerHeartParam(angle / 180);
         }

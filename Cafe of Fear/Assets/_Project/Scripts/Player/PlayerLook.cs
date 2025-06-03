@@ -7,7 +7,7 @@ namespace CafeOfFear
     {
         [SerializeField] private Camera _camera;
 
-        public Vector3 PlayerLookDirection { get => transform.forward; }
+        public Vector3 PlayerVectorForward { get => transform.forward; }
 
         [Header("Smoothing")]
         private float _smoothTime = 5f;

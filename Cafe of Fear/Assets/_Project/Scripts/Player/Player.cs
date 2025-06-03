@@ -8,7 +8,7 @@ namespace CafeOfFear
         [SerializeField] private PlayerLook _playerLook;
 
         public Vector3 Position { get => transform.position; }
-        public Vector3 PlayerLook { get => _playerLook.PlayerLookDirection; }
+        public Vector3 PlayerVectorForward { get => _playerLook.PlayerVectorForward; }
 
         private void Awake()
         {

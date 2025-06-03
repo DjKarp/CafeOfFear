@@ -139,9 +139,8 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
-  bundleVersion: 0.14
-  preloadedAssets:
-  - {fileID: 11400000, guid: 024b8a70d5a7e7543aabbce7b93f24ab, type: 2}
+  bundleVersion: 0.16
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -164,7 +163,7 @@ PlayerSettings:
   applicationIdentifier:
     Standalone: com.KarpushaNikolay.CafeOfFear
   buildNumber:
-    Standalone: 14
+    Standalone: 16
     VisionOS: 0
     iPhone: 0
     tvOS: 0
